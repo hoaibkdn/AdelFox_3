@@ -1,0 +1,15 @@
+.c-form-box {
+  position: relative;
+  padding: $padding-md;
+  &__wrapper {
+    padding: $padding-lg;
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    right: px_to_rem(25px);
+    color: $cl-icon-mobile-search;
+    font-size: px_to_rem(25px);
+  }
+}

@@ -1,0 +1,26 @@
+.c-top-header {
+  // width: 100%;
+  position: relative;
+  padding: $padding-md 0;
+  background: $cl-bg-top-header;
+  &__logo {
+    float: left;
+    margin-top: 0;
+  }
+  &__nav {
+    @extend %f-lato-bold; 
+    @extend %f-size__medium;
+    margin-top: px_to_rem(10px);
+    float: right;
+  }
+}
+
+.c-search {
+  font-size: px_to_rem(20px);
+  padding-left: $padding-sm;
+  color: $cl-icon-search;
+  &:before {
+    position: absolute;
+    top: px_to_rem(32px);
+  }
+}

@@ -1,0 +1,13 @@
+.c-feature {
+  background: $cl-bg-feature;
+  padding-bottom: px_to_rem(50px);
+}
+
+.icons-feature1,
+.icons-feature1-act,
+.icons-feature2,
+.icons-feature2-act,
+.icons-feature3,
+.icons-feature3-act {
+  @extend %size-icon;
+}

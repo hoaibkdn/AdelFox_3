@@ -1,0 +1,64 @@
+section.c-top-header
+  .container
+    h1.c-top-header__logo
+      a(href="#")
+        img(src="images/slice/general/header/logo.png", alt="")
+    div.c-top-header__nav.flex-box
+
+      //- desktop
+      nav.c-nav
+        - var menu = ["home", "page", "portfolio", "shop", "blog", "shortcodes","features" ]
+          ul.c-nav__group
+            each item in menu
+              li
+                +text-nav(item).flex-box
+      .c-search.icon-search
+
+      //- mobile
+      button(type = "button").navbar-toggle.c-top-header__nav--mb(data-toggle="collapse", aria-expanded="false", aria-controls="menu-mobile", data-target="#menu-mobile")
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      
+      //- tablet
+      button(type = "button").flex-box.navbar-toggle.c-top-header__nav--tb.c-btn-menu(data-toggle="collapse", aria-expanded="false", aria-controls="menu-mobile", data-target="#menu-mobile")
+        p.c-btn-menu__text menu
+        div.c-btn-menu__icon
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+
+div.c-nav-mb__group.collapse#menu-mobile
+  ul.nav.navbar-nav.c-nav-mb__nav
+    - var menu = ["home", "page", "portfolio", "shop", "blog", "shortcodes", "featured"]
+        each item in menu
+          if item == "featured"
+            li.c-nav-mb__box.dropdown
+              a.c-nav-mb__item.dropdown-toggle(data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false")
+                p.c-nav-mb__text=item
+                .icon-check-circle-o.c-nav-mb__icon
+              ul.dropdown-menu.c-nav-mb__sub-menu
+                - var sub_menu_1=["layer slider banner","feature 2"]
+                  each item in sub_menu_1
+                    li.c-nav-mb__sub-menu--item
+                      p.c-nav-mb__sub-menu--name=item
+                      ul.c-nav-mb__child
+                        - var sub_menu_2 = ["Sub menu level 2", "Sub menu level 2", "Sub menu level 2", "Sub menu level 2"]
+                          each item in sub_menu_2
+                            li
+                              a.c-nav-mb__child--name=item
+          else
+            li.c-nav-mb__box
+              a.c-nav-mb__item
+                p.c-nav-mb__text=item
+                .icon-check-circle-o.c-nav-mb__icon
+
+  ul.nav.navbar-nav.c-nav-mb__info
+    - var info = ["email:tranmautritam@gmail.com", "Phone: +84 935 121 132", "Skype: mr.crazykv", "Cart [2] items"]
+      each item in info
+        li.c-nav-mb__box
+          a.c-nav-mb__item
+            p.c-nav-mb__text=item
+  form.c-form-box.form-group.navbar-nav.c-nav-mb__info
+    input(type="text").c-form-box__wrapper.form-control
+    .c-form-box__icon.icon-search

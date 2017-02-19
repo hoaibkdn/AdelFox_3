@@ -1,0 +1,28 @@
+@media only screen and (min-width : $screen-xs) {
+  .c-what-people-say {
+    &__dt-mb {
+      display: block;
+    }
+
+    &__tl {
+      display: none;
+    }
+
+    &__content-client {
+      flex-direction: column;
+      align-items: center;
+      &-avatar {
+         text-align: center;
+         padding-right: 0;
+      }
+      &-desc {
+        width: 100%;
+        text-align: center;
+      }
+
+      &-social {
+        padding-top: px_to_rem(15px);
+      }
+    }
+  }
+}

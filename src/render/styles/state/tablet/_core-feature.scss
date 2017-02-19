@@ -1,0 +1,36 @@
+@media only screen and (min-width : $screen-sm) {
+  .c-core-feature {
+
+    h2 {
+      text-align: center;
+    }
+    background-image: url(../../images/slice/tablet/bg_core_feature.png);
+    .c-btn-arrow {
+      display: none;
+    }
+
+    &__content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__cup--icon {
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+
+    &__desc {
+      width: 100%;
+      text-align: center;
+
+      &--title {
+        color: $cl-text-core-feature;
+        font-size: $f-size-medium;
+      }
+    }
+
+    &__btn {
+      justify-content: center;
+    }
+  }
+}

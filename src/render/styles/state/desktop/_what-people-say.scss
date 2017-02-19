@@ -1,0 +1,32 @@
+
+// desktop
+@media only screen and (min-width : $screen-md) {
+  .c-what-people-say {
+    // display desktop - mobile
+    &__dt-mb {
+      display: block;
+    }
+
+    // display tablet
+    &__tl {
+      display: none;
+    }
+
+    &__content-client {
+      flex-direction: inherit;
+      &-avatar {
+         width: 20%;
+          margin-right: px_to_rem(20px);
+          margin-bottom: px_to_rem(150px);
+      }
+      &-desc {
+         width: 75%;
+         text-align: left;
+      }
+
+      &-social {
+        padding-top: px_to_rem(15px);
+      }
+    }
+  }
+}

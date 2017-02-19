@@ -1,0 +1,19 @@
+@media screen and (min-width: $screen-sm) {
+  .c-search {
+    display: none;
+  }
+  .c-info {
+    background: $cl-bg-tablet-header;
+    display: block;
+    border-bottom-color: $cl-transparent;
+  }
+  .c-top-header {
+    background: $cl-bg-tablet-header;
+    &__nav--mb {
+      display: none;
+    }
+    &__nav--tb {
+      display: block;
+    }
+  }
+}

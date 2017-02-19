@@ -1,0 +1,15 @@
+@media only screen and (min-width : $screen-md) {
+  .c-portfolio {
+    &__btn--left,
+    &__btn--right {
+      display: none;
+    }
+  }
+  .c-box-img {
+    display: block;
+  }
+  .c-box-img-tb,
+  .c-box-img-mb {
+    display: none;
+  }
+}

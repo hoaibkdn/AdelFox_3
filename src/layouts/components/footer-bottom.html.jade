@@ -1,0 +1,11 @@
+section.c-footer-bottom
+  .container
+    .col-md-5.col-sm-12.col-xs-12.c-footer-bottom__copy
+      p.c-footer-bottom__copy--content Copyright 2013 - by tranmautritam
+    .col-md-7.c-footer-bottom__nav
+      nav.c-nav
+        - var menu = ["home", "page", "portfolio", "shop", "blog", "shortcodes","features" ]
+          ul.c-nav__group
+            each item in menu
+              li
+                a.c-icon-text__content.c-footer-bottom__nav--item(href="javascript:void(0);")= item

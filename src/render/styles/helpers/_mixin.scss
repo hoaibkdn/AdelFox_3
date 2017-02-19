@@ -1,0 +1,127 @@
+// define icomoon font
+
+
+/* --------------- ICON --------------- */
+
+/*========== find icon ==========*/
+@mixin find_icon($none, $normal, $liga, $discretionary-ligatures){
+  font-family: 'icomoon' !important;
+  speak: #{$none};
+  font-style: #{$normal};
+  font-weight: #{$normal};
+  font-variant: #{$normal};
+  text-transform: #{$none};
+  line-height: 1;
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "#{$liga}";
+  -moz-font-feature-settings: "#{$liga}=1";
+  -moz-font-feature-settings: "#{$liga}";
+  -ms-font-feature-settings: "#{$liga}" 1;
+  font-feature-settings: "#{$liga}";
+  -webkit-font-variant-ligatures: #{$discretionary-ligatures};
+  font-variant-ligatures: #{$discretionary-ligatures};
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin n_icon($n_icon, $v_icon) {
+  .#{$n_icon} {
+    &:before {
+      content: $v_icon;
+    }
+  }
+}
+
+/*========== find icon ==========*/
+/* --------------- FONT --------------- */
+@mixin font-family($font_name) {
+    @font-face {
+        font-family: $font_name;
+        src: url('#{$font_url}#{$font_name}.ttf');
+    }
+}
+
+
+/*========== border ==========*/
+/* --------------- BORDER RADIUS --------------- */
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+/*========== size ==========*/
+/* --------------- SQUARE --------------- */
+@mixin size-box($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+/* --------------- SIZE --------------- */
+@mixin square-box($size) {
+  width: $size;
+  height: $size;
+}
+
+
+/* --------------- SIZE --------------- */
+@mixin circle($size) {
+  width: $size;
+  height: $size;
+  border-radius: 100%;
+}
+
+
+/* --------------- Convert px to rem --------------- */
+@function px_to_rem ($value_px) {
+  @return $value_px/$f-size-default * 1rem;
+}
+
+/* --------------- SQRT a number--------------- */
+@function sqrt($r) {
+  $x0: 1;
+  $x1: $x0;
+ 
+  @for $i from 1 through 10 {
+    $x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
+    $x0: $x1;
+  }
+  @return $x1;
+}
+
+/* --------------- Hexagon --------------- */
+@mixin hexagon($radius, $bg-color, $border-color) {
+  width: sqrt(3) * $radius;
+  height: $radius;
+  position: relative;
+  background: $bg-color;
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  margin: $radius 0;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: sqrt(3) * $radius;
+    height: $radius;
+    background: $bg-color;
+    border-left: 1.5px solid $border-color;
+    border-right: 1.5px solid $border-color;
+  }
+  &:before {
+    transform: rotate(60deg);
+  }
+  &:after {
+    transform: rotate(120deg);
+  }
+}
+
+/* --------------- convert percent to deg --------------- */
+@function per-to-deg($percent) {
+  @return $percent * 3.6deg;
+}

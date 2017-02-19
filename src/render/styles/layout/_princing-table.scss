@@ -1,0 +1,70 @@
+.c-princing-table {
+  display: none;
+}
+@media screen and (min-width: $screen-sm) and (max-width: $max-size-medium-screen) {
+  .c-princing-table {
+    display: block;
+    text-align: center;
+    background: $cl-bg-princing;
+    text-transform: capitalize;
+    &__title {
+      color: $cl-text-title-section;
+      padding: px_to_rem(22px);
+      font-size: $f-size-large;
+    }
+    &__item {
+      background: $cl-bg-item-princing; 
+      border: 1px solid $cl-border-item-princing;
+      margin: $margin-lg;
+    }
+    &__price {
+      padding: $padding-md;
+      background: $cl-bg-price-princing;
+      color: $cl-white;
+      .number {
+        font-size: px_to_rem(30px);
+      }
+      .month {
+        text-transform: lowercase;
+        font-size: px_to_rem(20px);
+      }
+    }
+    &__content {
+      padding: $padding-md;
+      padding-bottom: $padding-lg;
+    }
+    &__jobs {
+      padding: $padding-md 0;
+      p {
+        padding-bottom: $padding-md;
+      }
+    }
+    &__btn {
+      @include button-size($padding-sm, $padding-lg , $f-size-small, px_to_rem(30px), 3px);
+      text-transform: uppercase;
+      color: $cl-text-btn;
+      background: $cl-bg-btn-princing;
+      display: inline-block;
+    }
+  }
+  .c-princing-table__item:hover {
+    background: $cl-bg-item-princing-active;
+    .c-princing-table {
+      &__content {
+        color: $cl-white;
+      }
+      &__title {
+        color: $cl-white;
+        // background: $cl-bg-item-princing-active;
+      }
+      &__price {
+        color: $cl-text-title-section;
+        background: $cl-bg-item-princing;
+      }
+      &__btn {
+        background: $cl-bg-btn-active;
+        color: white;
+      }
+    }
+  }
+}

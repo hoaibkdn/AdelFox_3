@@ -1,0 +1,34 @@
+// define title and description
+@media only screen and (min-width : $screen-xs){
+  .c-text-content {
+    padding: $padding-sm;
+    &__title {
+      color: $cl-text-title-sm;
+      // padding-bottom: $padding-sm;
+      font-size: $f-size-medium;
+    }
+    &__content {
+      font-size: $f-size-default;
+    }
+  }
+}
+
+@media only screen and (min-width : $screen-sm) {
+  .c-text-content {
+    &__title {
+      text-transform: capitalize;
+      font-size: $f-size-default;
+    }
+  }
+}
+
+@media only screen and (min-width : $screen-md) {
+  .c-text-content {
+    padding: $padding-sm;
+    &__title {
+      color: $cl-text-title-sm;
+      // padding-bottom: $padding-sm;
+      font-size: $f-size-medium;
+    }
+  }
+}

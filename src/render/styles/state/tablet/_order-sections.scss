@@ -1,0 +1,8 @@
+@media screen and (min-width: $screen-sm) and (max-width: $max-size-medium-screen) {
+  .order-tablet {
+    display: block;
+  }
+  .order-desktop {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+.c-mobile-display {
+  padding-top: px_to_rem(100px);
+  &__btn {
+    &--learn,
+    &--purchase {
+      cursor: pointer;
+      margin-right: $margin-md;
+      @include button-size($padding-sm, $padding-lg , px_to_rem(14px), px_to_rem(20px), 5px);
+      color: $cl-text-btn;
+      background: $cl-bg-btn-default;
+      &:hover {
+        @extend .is-active;
+      }
+    }
+    &--purchase {
+      margin-right: 0;
+    }
+    margin-bottom: px_to_rem(60px);
+    margin-top: $margin-md;
+  }
+}

@@ -1,0 +1,18 @@
+.c-welcom-adelfox
+  .container
+    .content-wrapper
+      h2.c-tit-desc-section Welcome to AdelFox Design
+      .c-welcom-adelfox__desc.row.flex-box
+        p.c-welcom-adelfox__desc--content Maecenas bibendum lacus gravida placerat consequat. Vivamus quis hendrerit mauris. Vestibulum laoreet felis sed consectetur sollicitudin.
+      .row
+        - var welcome = [{"image":"images/slice/general/content/im_adelFox_design.png", "alt":"adelFox design","title":"Our Mission", "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "}, {"image":"images/slice/general/content/im_adelFox_design.png", "alt":"adelFox design","title":"Our Values", "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "}, {"image":"images/slice/general/content/im_adelFox_design.png", "alt":"adelFox design","title":"Our Solution", "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "}]
+          each item in welcome
+            .col-md-4.col-xs-12.c-welcom-adelfox__list
+              .c-welcom-adelfox__list--box-img
+                .c-list-img
+                  img.o-images(src="#{item.image}")
+                  .c-list-img__icons
+                    i.icon-plus
+              .c-text-content.c-welcom-adelfox__list--content
+                h4.c-text-content__title #{item.title}
+                p.c-text-content__content #{item.desc}

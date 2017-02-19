@@ -1,0 +1,74 @@
+//define 1 item in feture section
+@import "icons/*.png";
+@include all-icons-sprites;
+
+
+//desktop
+.c-box {
+   padding: px_to_rem(50px) $padding-md;
+   text-align: center;
+   margin-top: px_to_rem(100px);
+   margin-bottom: $margin-lg;
+   position: relative;
+   border: 1px solid $cl-border-feature-box;
+   border-bottom-width: 3px;
+   height: px_to_rem(200px);
+   &__icons {
+     position: absolute;
+     bottom: 78%;
+     left: 50%;
+     transform: translateX(-50%);
+     &--normal {
+       display: block;
+     }
+     &--active {
+       display: none;
+     }
+   }
+   &__btn {
+     @extend .c-btn;
+     position: absolute;
+     bottom: -9%;
+     left: 50%;
+     transform: translateX(-50%);
+     &:hover {
+       @extend .c-btn-active;
+     }
+   }
+   &:hover {
+     cursor: pointer;
+     .c-box {
+       &__icons {
+         &--normal {
+           display: none;
+         }
+         &--active {
+           display: block;
+         }
+       }
+       &__btn {
+         @extend .c-btn-active;
+       }
+     }
+   }
+}
+
+//tablet
+.c-box-tb {
+  margin-top: px_to_rem(100px);
+  position: relative;
+  padding: $padding-lg 0;
+  &__icons {
+    @extend %position-horizontal-center;
+    bottom: 100%;
+    color: $cl-icon-tablet-feature;
+    background: $cl-bg-feature-icon;
+    font-size: px_to_rem(38px);
+    text-align: center;
+    @include circle(px_to_rem(90px));
+    &-img {
+      left: 50%;
+      @extend %position-center;
+    }
+  }
+}

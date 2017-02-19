@@ -1,0 +1,26 @@
+.c-purchase-now {
+  &__wrapper {
+    background-color: $cl-bg-purchase;
+    padding-top: px_to_rem(60px);
+    padding-bottom: px_to_rem(60px);
+    overflow: hidden;
+  }
+  &__text {
+    @extend %float-left;
+    @extend %t-left;
+    &--desc {
+      line-height: px_to_rem(20px);
+    }
+  }
+  &__button {
+    @extend %t-right;
+    @extend %float-right;
+    padding-top: $padding-lg;
+  }
+}
+
+
+
+
+
+

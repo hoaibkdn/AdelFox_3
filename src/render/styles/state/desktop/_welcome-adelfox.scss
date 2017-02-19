@@ -1,0 +1,10 @@
+@media only screen and (min-width : $screen-md) {
+  .c-welcom-adelfox {
+    display: block;
+    .c-list-img {
+      &:hover:after {
+        right: -7%;
+      }
+    }
+  }
+}

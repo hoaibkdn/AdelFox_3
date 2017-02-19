@@ -1,0 +1,117 @@
+.c-box-img {
+  position: relative;
+  width: 100%;
+  height: px_to_rem(230px);
+  background: $cl-bg-img-portfolio;
+  display: inline-block;
+  &__btn,
+  &__text {
+    display: none;
+  }
+  &:hover {
+    cursor: pointer;      
+    .c-box-img {
+      &__btn {
+        display: block;
+        position: absolute;
+        top: 0;
+        background: $cl-bg-social-btn-portfolio;
+        width: 100%;
+        height: px_to_rem(130px);
+        &--group {
+          @extend %position-center;
+          .btn-icon {
+            margin: $margin-sm;
+          }
+        }
+      }
+      &__text {
+        display: block;
+        background: $cl-bg-text-portfolio;
+        width: 100%;
+        height: px_to_rem(100px);
+        position: absolute;
+        bottom: 0;
+        &--center {
+          @extend %position-center;
+        }
+        &:after {
+          content: "";
+          @extend %position-horizontal-center;
+          @include square-box(px_to_rem(20px));
+          transform: translate(-50%) rotate(45deg);
+          top: -7px;
+          background: $cl-bg-text-portfolio;
+        }
+      }   
+    }
+    @extend .o-text;
+  }
+}
+
+.o-text {
+  text-transform: capitalize;
+  &__title {
+    color: $cl-text-name-portfolio;
+    padding-bottom: $padding-xsm;
+  }
+  &__content {
+    font-size: $f-size-default;
+  }
+}
+
+.c-box-img-tb {
+  margin-bottom: $margin-lg;
+  &__avata {
+    height: px_to_rem(250px);
+    background: $cl-bg-img-portfolio;
+    flex: 2;
+  }
+  &__text {
+    flex: 1;
+    justify-content: space-between;
+    background: $cl-bg-text-portfolio;
+    height: px_to_rem(250px);
+    width: 100%;
+    text-align: left;
+    @extend .o-text;
+    position: relative;
+    flex-direction: column;
+    &:after {
+      content: "";
+      position: absolute;
+      @include square-box(px_to_rem(20px));
+      transform: rotate(45deg);
+      top: px_to_rem(40px);
+      left: -7px;
+      background: $cl-bg-text-portfolio;
+    }
+  }
+  &__info {
+    padding: $padding-lg $padding-lg 0 $padding-lg;
+  }
+  &__extend {
+    position: relative;
+    background: $cl-bg-tablet-extend;
+    .c-box-img-tb__view {
+      color: $cl-text-tablet-extend;
+      padding: $padding-md $padding-lg;
+      width: 100%;
+    }
+    .c-box-img-tb__plus {
+      color: $cl-text-tablet-extend;
+      background: $cl-bg-tablet-plus;
+      padding: $padding-md px_to_rem(20px) ;
+    }
+  }
+}
+
+.c-box-img-mb {
+  margin-top: $margin-md;
+  position: relative;
+  border: 2px solid $cl-border-mobile-portfolio;
+  &__avata {
+    background: $cl-bg-img-portfolio;
+    height: px_to_rem(200px);
+  }
+}

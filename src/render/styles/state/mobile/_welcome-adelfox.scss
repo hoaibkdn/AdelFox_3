@@ -1,0 +1,18 @@
+
+//mobile
+@media only screen and (min-width : 320px) {
+  .c-welcom-adelfox {
+    display: block;
+  }
+}
+
+@media only screen and (min-width : 580px) {
+  .c-welcom-adelfox {
+    display: block;
+    .c-list-img {
+      &:hover:after {
+        right: -4%;
+      }
+    }
+  }
+}

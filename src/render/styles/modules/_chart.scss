@@ -1,0 +1,51 @@
+.c-chart {
+  @include circle(120px);
+  background-color: $cl-bg-chart;
+  position: relative;
+  font-size: $f-size-medium;
+  // @include square-box(100px);
+  border-radius: 50%;
+  // border: 8px solid #cccccc;
+  box-sizing: border-box;
+  &__slice {
+    @extend %position-center;
+    @include square-box(100px);
+  }
+  &__percent,
+  &__fill {
+    @include square-box(100px);
+    position: absolute;
+    border: 5px solid $cl-text--percent-capabilities;
+    clip: rect(0px, 50px, 100px, 0px);
+    border-radius: 50%;
+  }
+  &__fill {
+    transform: rotate(180deg);
+  }
+  &__text {
+    @extend %position-center;
+    color: $cl-text--percent-capabilities;
+  }
+
+  &:hover {
+    background: $cl-bg-chart-active;
+    .c-chart {
+      &__percent,
+      &__fill {
+        border-color: $cl-border-chart-active;
+      }
+      &__text {
+        color: $cl-text-chart-active;
+      }
+    }
+  }
+}
+
+$percent: 65;
+@while $percent < 100 {
+  .c-chart__#{$percent} {
+    transform: rotate(per-to-deg($percent));
+  }
+  $percent: $percent + 1;
+}
+

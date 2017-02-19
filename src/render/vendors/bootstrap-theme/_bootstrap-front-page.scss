@@ -1,0 +1,63 @@
+// modify bootstrap
+.icon-bar {
+  background: $cl-bg-icon-bar;
+}
+
+.nav > li > a {
+  margin: 0 $padding-lg;
+  padding: $padding-md 0;
+}
+
+.nav .open > a {
+  border-color: $cl-transparent;
+  &:hover {
+    border-color: $cl-transparent;
+  }
+}
+
+.open {
+  background: $cl-bg-mobile-sub-menu;
+  & > a {
+    border-color: rgba(255,255,255, 0);
+  }
+  a {
+    p {
+      color: $cl-text-mobile-sub-menu-active;
+    }
+  }
+}
+
+.dropdown-menu > li > a {
+  padding: $padding-md $padding-md $padding-lg 0;
+  &:hover {
+    background: $cl-transparent;
+  }
+}
+
+.navbar-nav {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $cl-text-btn;
+  &:hover {
+    text-decoration: none;
+    color: $cl-text-btn;
+  }
+}
+
+// category
+.btn-group > .btn {
+  font-weight: $f-light;
+  font-size: $f-size-default;
+  line-height: 30px;
+  @extend %t-capi;
+}
+
+// @media only screen and (min-width: $screen-md) {
+//   .container {
+//     width: 1010px;
+//     margin: 0 auto;
+//   }
+// }

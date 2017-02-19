@@ -1,0 +1,21 @@
+@media only screen and (min-width : $screen-xs) {
+  .c-box-img,
+  .c-box-img-tb {
+    display: none;
+  }
+  .c-portfolio {
+    background: $cl-bg-porfolio;
+    border: 1px solid $cl-border-mobile-portfolio-section;
+    padding:  px_to_rem(25px) px_to_rem(15px) px_to_rem(36px) px_to_rem(15px);
+    &__categories--dt {
+      display: none;
+    }
+    &__categories--mb,
+    &__indicator--mb {
+      display: block;
+    }
+  }
+  .c-box-img-mb {
+    display: block;
+  }
+}

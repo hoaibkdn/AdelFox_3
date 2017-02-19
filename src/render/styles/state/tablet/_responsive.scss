@@ -1,0 +1,12 @@
+@media screen and (min-width: $screen-sm) {
+  .c-responsive {
+    padding-top: px_to_rem(100px);
+    padding-bottom: px_to_rem(100px);
+    &__content {
+      margin-left: px_to_rem(80px);
+    }
+    &__list {
+      margin-right: px_to_rem(30px);
+    }
+  }
+}

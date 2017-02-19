@@ -1,0 +1,23 @@
+section.c-feature
+  .container
+    .row
+
+      //- desktop and mobile
+      - var features = [{"icon":"icons-feature1", "icon_act":"icons-feature1-act", "title": "Clean and Unique Design", "content": "Fuscue gravida tortor tortor tortor tortor gravida tortor tortor tortor tortor"}, {"icon":"icons-feature2", "icon_act":"icons-feature2-act", "title": "Clean and Unique Design", "content": "Fuscue gravida tortor tortor tortor tortor"}, {"icon": "icons-feature3", "icon_act": "icons-feature3-act", "title": "Clean and Unique Design", "content": "Fuscue gravida tortor tortor tortor tortor"}]
+        each item in features
+          .col-md-4.col-xs-12.c-feature__box
+            article.c-box
+              div.c-box__icons
+                div.c-box__icons--normal(class = item.icon)
+                div.c-box__icons--active(class = item.icon_act)
+              +text-content(item.title, item.content)
+              a.c-box__btn read more
+
+      //- tablet
+      - var features_tablet = [{"icon":"icon-skype", "title": "Unique Design", "content": "Fuscue gravida tortor tortor tortor tortor gravida tortor tortor tortor tortor"}, {"icon":"icon-skype", "title": "Unlimited Creations", "content": "Fuscue gravida tortor tortor tortor tortor gravida tortor tortor tortor tortor"}, {"icon": "icon-skype", "title": "Professional support", "content": "Fuscue gravida tortor tortor tortor tortor"}, {"icon": "icon-skype", "title": "perfect files", "content": "Fuscue gravida tortor tortor tortor tortor"}]
+        each item in features_tablet
+          .col-sm-3.c-feature__box-tb
+            article.c-box-tb
+              div.c-box-tb__icons
+                .c-box-tb__icons-img(class = item.icon)
+              +text-content(item.title, item.content)

@@ -1,0 +1,22 @@
+@media screen and (min-width: $screen-xs) {
+  .c-mobile-display {
+    background: $cl-bg-mb-display;
+    &__img {
+      background: url("../images/slice/general/content/hand_mobile.png") no-repeat;
+      height: px_to_rem(515px);
+    }
+    &__content {
+      padding-left: px_to_rem(15px);
+      padding-right: px_to_rem(15px);
+    }
+    &-flex {
+      display: block;
+    }
+    &--tb {
+      display: none;
+    }
+    &--mb {
+      display: block;
+    }
+  }
+}

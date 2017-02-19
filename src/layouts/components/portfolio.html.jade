@@ -1,0 +1,61 @@
+section.c-portfolio
+  .container
+    .row
+      .c-portfolio__title
+        +tit-desc-section("Featured Products", "")
+      .c-portfolio__categories
+        
+        //- desktop and tablet
+        .c-portfolio__categories--dt.flex-box
+          .c-portfolio__btn--left.icon-chevron-left.btn.btn-default
+          .c-portfolio__btn--middle.btn-group(role="group", aria-label="...").o-categories
+            - var list = ["All", "design", "marketing", "Ads network", "awesome"] 
+              each item in list
+                button(type="button").o-categories__item.btn.btn-default=item
+          .c-portfolio__btn--right.icon-chevron-right.btn.btn-default
+        
+        //- mobile
+        .c-portfolio__categories--mb.input-group.o-categories
+          input(type="text").form-control.o-categories__select
+          button(type="button").btn.btn-default.o-categories__btn.icon-chevron-left
+
+          
+      .c-portfolio__img.col-md-12
+        .row
+          //- desktop
+          - for (var x = 0; x < 6; x++)
+            if (x==0 || x==3)
+              .col-md-4.padding-right-0
+                +portfolio-desktop("Maecenas", "Maketing online")
+            else if (x==1 || x==4)
+              .col-md-4.padding-middle
+                +portfolio-desktop("Maecenas", "Maketing online")
+            else if (x==2 || x==5)
+              .col-md-4.padding-left-0
+                +portfolio-desktop("Maecenas", "Maketing online")
+          
+          //- mobile
+          article.c-box-img-mb
+            .c-box-img-mb__avata
+            .c-box-img-mb__btn-slide
+              a.c-btn-arrow.c-btn-arrow-prev(href="javascript:void(0);")
+                i.icon-chevron-left
+              a.c-btn-arrow.c-btn-arrow-next(href="javascript:void(0);")
+                i.icon-chevron-right
+
+  //-  tablet
+  article.c-box-img-tb.flex-box
+    .c-box-img-tb__avata
+    .c-box-img-tb__text.flex-box
+      .c-box-img-tb__info.o-text
+        h5.o-text__title Maecenas 
+        p.o-text__content Maketing online
+      .c-box-img-tb__extend.flex-box
+        a.c-box-img-tb__view view more
+        a.c-box-img-tb__plus +
+      
+  .c-portfolio__indicator
+    ul.bg-circle.c-indicators
+        - for (var x = 0; x < 4; x++)
+          li
+            a(href="javascript:void(0);")

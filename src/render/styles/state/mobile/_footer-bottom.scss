@@ -1,0 +1,14 @@
+@media screen and (min-width: $screen-xs) {
+  .c-footer-bottom {
+    &__copy {
+      display: block;
+      &--content {
+        text-align: center;
+      }
+    }
+
+    &__nav {
+      display: none;
+    }
+  }
+}

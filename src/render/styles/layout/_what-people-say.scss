@@ -1,0 +1,118 @@
+.c-what-people-say {
+  &__wrapper {
+    @extend %t-center;
+  }
+  &__desc {
+    justify-content: center;
+    line-height: px_to_rem(20px);
+
+    &--content {
+      max-width: 500px;
+      padding-bottom: $padding-lg;
+    }
+  }
+
+  &__content {
+    overflow: hidden;
+
+    &-client {
+      display: flex;
+
+      &-avatar {
+        display: inline-block;
+        padding-right: px_to_rem(20px);
+      }
+
+      &-desc {
+        @extend %float-right;
+        line-height: px_to_rem(20px);
+        text-align: left;
+      }
+
+      &-social {
+        padding-bottom: px_to_rem(5px);
+        padding-top: px_to_rem(15px);
+      }
+    }
+
+    &-logo-list {
+      list-style-type: none;
+      & > li{
+        display: inline-block;
+        height: 75px;
+        line-height: px_to_rem(75px);
+        vertical-align: middle;
+        &:not(:last-child) {
+          padding-right: 10px;
+        }
+      }
+      .logo-effect {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        cursor: pointer;
+        &:hover {
+          filter: grayscale(0);
+        }
+      }
+    }
+  }
+
+  .c-what-people-say__content-client {
+
+    &-avatar {
+      &-circle {
+        @include circle(80px);
+        background-color: $cl-bg-avatar;
+      }
+    }
+    &-desc {
+
+      &-name {
+        font-size: px_to_rem(16px);
+        color: $cl-text-title-sm;
+      }
+
+      &-text {
+        color: $cl-text-profile;
+      }
+    }
+
+    &-social {
+      & > li {
+        display: inline-block;
+        padding: 3px $padding-xsm;
+        background-color: $cl-bg-social-people-say;
+        color: $cl-icon-social-peope-say;
+        &:not(:last-child) {
+          margin-right: px_to_rem(10px);
+        }
+
+        &:hover {
+          background-color: $cl-bg-social-people-say-hover;
+        }
+      }
+    }
+
+    &-stars  {
+      .star-voted {
+        color: $cl-bg-star-voted;
+      }
+      .star-unvoted {
+        color: $cl-bg-star-unvoted;
+      }
+      .star {
+        padding-right: $padding-small-horizontal;
+      }
+    }
+  }
+
+  .o-img {
+    width: 100%;
+  }
+
+  .o-horizontal {
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+}
+

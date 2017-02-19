@@ -1,0 +1,22 @@
+.c-slide {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $cl-bg-slide;
+  background-size: cover;
+  @extend %relative;
+
+  &__desc {
+    overflow: hidden;
+    &-text {
+      @extend %t-center;
+      @extend %float-left;
+    }
+
+    &-indicators {
+      @extend %float-right;
+      @extend %t-right;
+      bottom: 0;
+      // margin-top: 470px;
+    }
+  }
+}

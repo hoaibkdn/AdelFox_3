@@ -1,0 +1,31 @@
+.c-recent-blog {
+  @extend %t-center;
+  background-color: $cl-bg-recent-blog;
+
+  &__desc {
+    justify-content: center;
+    line-height: px_to_rem(20px);
+    padding-bottom: 20px;
+
+    &--content {
+      max-width: 500px;
+      padding-bottom: px_to_rem(40px);
+      padding-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__button {
+    @extend %t-center;
+    padding-top: px_to_rem(60px);
+    width: 100%;
+    .c-btn-lg {
+      padding: px_to_rem(15px) px_to_rem(35px);
+      cursor: pointer;
+      text-transform: capitalize;
+    }
+  }
+  .o-btn-lg:hover {
+    background-color: $cl-bg-button-recent-blog;
+  }
+}

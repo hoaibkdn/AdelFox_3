@@ -1,0 +1,14 @@
+@media screen and (min-width: $screen-sm) {
+  .c-footer-bottom {
+    &__copy {
+      display: block;
+      &--content {
+        text-align: left;
+      }
+    }
+
+    &__nav {
+      display: none;
+    }
+  }
+}

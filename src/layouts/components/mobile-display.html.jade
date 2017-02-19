@@ -1,0 +1,31 @@
+section.c-mobile-display          
+
+  .container
+    .row
+      .flex-box.c-mobile-display-flex
+        .col-xs-12.c-mobile-display--tb
+          picture.c-mobile-display__img
+            - var min_width = "768px"
+            - var max_size_medium_screen = "991px"
+            source(media = "(min-width: #{min_width}) and (max-width: #{max_size_medium_screen})", srcset="images/slice/tablet/hand_mobile.png")
+            img.img-responsive(src="images/slice/general/content/hand_mobile.png")
+        .col-xs-12
+          .c-mobile-display__content
+            +tit-desc-section("Great Display on Mobile Devices", "")
+            - var mb_display = [{"icon" : "icon-skype", "title": "Smart Display", "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"}, {"icon" : "icon-skype", "title": "Smart Display", "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"}, {"icon" : "icon-skype", "title": "Smart Display", "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"}]
+              each item in mb_display
+                article.media.c-list-mobile
+                  .media-left
+                    .c-list-mobile__box
+                      .c-list-mobile__box--outer
+                        .c-list-mobile__box--inner
+                          .c-list-mobile__icon(class = item.icon)
+                  .media-body.c-list-mobile__text
+                    +text-content(item.title, item.content)
+            .c-mobile-display__btn.flex-box
+              .c-mobile-display__btn--learn Learn more
+              .c-mobile-display__btn--purchase Purchase now
+        .col-xs-12.c-mobile-display--mb
+          picture.c-mobile-display__img
+            source(media = "(min-width:768px) and (max-width:991px)", srcset="images/slice/tablet/hand_mobile.png")
+            img.img-responsive(src="images/slice/general/content/hand_mobile.png")

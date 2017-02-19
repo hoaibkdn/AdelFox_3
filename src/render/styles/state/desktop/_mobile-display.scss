@@ -1,0 +1,27 @@
+@media screen and (min-width: $screen-md) {
+  .c-mobile-display {
+    background: $cl-bg-mb-display;
+    &-flex {
+      align-items: flex-start;
+    }
+    
+    &__btn {
+      &--learn,
+      &--purchase {
+        cursor: pointer;
+        margin-right: $margin-md;
+        @include button-size($padding-sm, $padding-lg , px_to_rem(14px), px_to_rem(20px), 3px);
+        color: $cl-text-btn;
+        background: $cl-bg-btn-default;
+        &:hover {
+          background: $cl-active;
+          border: 1px solid  $cl-active;
+        }
+      }
+    }
+    .c-tit-desc-section {
+      text-align: left;
+      color: $cl-text-title-section; 
+    }
+  }
+}

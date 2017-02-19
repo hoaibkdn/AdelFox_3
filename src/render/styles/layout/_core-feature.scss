@@ -1,0 +1,73 @@
+.c-core-feature {
+  @extend %position-background;
+  @extend %relative;
+  &__img {
+    width: 100%;
+  }
+  h2 {
+    text-align: left;
+    color: $cl-text-core-feature;
+  }
+  .c-btn-arrow {
+    @include circle(50px);
+    &-prev {
+      background-color: transparent;
+      border: 2px solid $cl-border-prev-core-feature;
+      left: 7%;
+    }
+
+    &-next {
+      background-color: $cl-bg-next-core-feature;
+      border: 2px solid $cl-border-next-core-feature;
+      right: 7%;
+    }
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__cup {
+    &--icon {
+      width: 15%;
+      @include border-radius(5px);
+      width: px_to_rem(70px);
+      line-height: 0;
+      font-size: px_to_rem(60px);
+      color: $cl-icon-core-feauter;
+      border: 1px solid $cl-border-icon-core-feature;
+    }
+  }
+
+  &__desc {
+    width: 85%;
+    &--title {
+      color: $cl-text-core-feature;
+    }
+    @extend %t-left;
+    color: $cl-text-core-feature;
+  }
+
+  &__btn {
+    margin-top: 10px;
+
+    &--read,
+    &--purchase {
+      cursor: pointer;
+      margin-right: $margin-md;
+      @include button-size($padding-sm, $padding-lg , px_to_rem(12px), px_to_rem(20px), 5px);
+    }
+
+    &--read {
+      background-color: $cl-bg-btn-read-more;
+      color: $cl-text-btn-read;
+      padding-left: px_to_rem(40px);
+      padding-right: px_to_rem(40px);
+    }
+
+    &--purchase {
+      background-color: $cl-bg-btn-purchase-now;
+      color: $cl-text-btn-purchase;
+    }
+  }
+}

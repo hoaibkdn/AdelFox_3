@@ -1,0 +1,72 @@
+// define icon and content beside of mobile devices section
+.c-list-mobile {
+  margin-top: 0;
+  &__box {
+    &--outer {
+      @include hexagon(px_to_rem(35px), $cl-bg-icon-mb-display, $cl-border-icon-mb-display);
+    }
+    &--inner {
+      z-index: 5;
+      @extend %position-center;
+      @include hexagon(px_to_rem(30px), $cl-bg-icon-mb-display, $cl-border-icon-mb-display);
+      margin: 0;
+    }
+  }
+  &__icon {
+    @extend %position-center;
+    @extend %f-size__large;
+    color: $cl-icon-mb-display;
+    z-index: 6;
+  }
+  &__text {
+    text-align:left;
+  }
+}
+
+@media screen and (min-width: $screen-sm) {
+  .c-list-mobile {
+    &__box {
+      &--outer {
+        @include hexagon(px_to_rem(35px), $cl-bg-tablet-icon-mb-display, $cl-text-tablet-mb-display);
+      }
+      &--inner {
+        @include hexagon(px_to_rem(30px), $cl-bg-tablet-icon-mb-display, $cl-text-tablet-mb-display);
+      }
+    }
+    &__icon {
+      color: $cl-text-tablet-mb-display;
+    }
+    &__text {
+      color: $cl-text-tablet-mb-display;
+      .c-text-content__title {
+        font-weight: 800;
+        color: $cl-text-tablet-mb-display;
+      }
+    }
+  }
+  .c-tit-desc-section {
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .c-list-mobile {
+    &__box {
+      &--outer {
+        @include hexagon(px_to_rem(35px), $cl-bg-icon-mb-display, $cl-border-icon-mb-display);
+      }
+      &--inner {
+        @include hexagon(px_to_rem(30px), $cl-bg-icon-mb-display, $cl-border-icon-mb-display);
+      }
+    }
+    &__icon {
+      color: $cl-icon-mb-display;
+      z-index: 6;
+    }
+    &__text {
+      color: $cl-text-font-base;
+      .c-text-content__title {
+        color: $cl-text-title-sm;
+      }
+    }
+  }
+}

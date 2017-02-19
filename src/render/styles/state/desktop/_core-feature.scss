@@ -1,0 +1,30 @@
+@media only screen and (min-width : $screen-md) {
+  .c-core-feature {
+    background-image: url(../../images/slice/general/content/bg_core_feature.png);
+
+    h2 {
+      text-align: left;
+    }
+    .c-btn-arrow {
+      display: none;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: inherit;
+    }
+    &__cup--icon {
+      text-align: left;
+      margin-bottom: px_to_rem(55px);
+      margin-right: px_to_rem(20px);
+    }
+
+    &__desc {
+      text-align: left;
+    }
+
+    &__btn {
+      text-align: left;
+    }
+  }
+}

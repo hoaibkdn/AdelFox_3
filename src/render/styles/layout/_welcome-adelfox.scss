@@ -1,0 +1,46 @@
+.c-welcom-adelfox {
+  background-color: $cl-bg-welcome-adelfox;
+   &__desc {
+    justify-content: center;
+    line-height: px_to_rem(20px);
+
+    &--content {
+      max-width: 500px;
+      padding-bottom: px_to_rem(40px);
+      padding-top: 0;
+      margin-bottom: 0;
+    }
+  }
+  &__list{
+    &--images {
+      width: 100%;
+    }
+
+    &--box-img {
+      height: px_to_rem(210px);
+      overflow: hidden;
+    }
+
+    &--content {
+      @extend %t-left;
+      padding-top: 0;
+    }
+    .c-text-content__title {
+      margin-top: 0;
+    }
+
+    &:hover {
+      .c-text-content__title {
+        color: $cl-text-title-welcome-adelfox;
+      }
+    }
+  }
+
+
+  .o-images {
+    @extend %relative;
+    height: px_to_rem(180px);
+    width: 100%;
+    z-index: 2;
+  }
+}

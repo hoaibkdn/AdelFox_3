@@ -1,0 +1,40 @@
+.padding-right-0 {
+  padding-right: 0px;
+  padding-bottom: 1px; 
+} 
+.padding-left-0 {
+  padding-left: 0;
+  padding-bottom: 1px;
+}
+.padding-middle {
+  padding: 0 1px;
+  padding-bottom: 1px;
+}
+
+
+.c-portfolio {
+  padding: $padding-md 0;
+  text-align: center;
+  background: $cl-bg-porfolio;
+  &__btn--middle {
+    margin: 0 $margin-md;
+  }
+  &__btn--left,
+  &__btn--right {
+    padding-top: 8px;
+  }
+  &__categories--dt {
+    justify-content: center;
+    margin-bottom: px_to_rem(47px);
+  }
+  &__indicator {
+    margin-top: px_to_rem(50px);
+  }
+  .bg-circle {
+    li {
+      background: $cl-bg-mb-tb-indicator-portfolio;
+      width: px_to_rem(11px);
+      height: px_to_rem(11px);
+    }
+  }
+}

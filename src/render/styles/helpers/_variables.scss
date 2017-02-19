@@ -1,0 +1,357 @@
+
+$icomoon-font-path: "fonts";
+
+/* --------------- FONT SIZE --------------- */
+$font-url: '../fonts/Lato/';
+$f-size-default: 13px;
+$f-size-small: px_to_rem(14px);
+$f-size-medium: px_to_rem(16px);
+$f-size-large: px_to_rem(30px);
+
+
+
+
+
+/* --------------- FONT WEIGHT --------------- */
+$f-light: 300;
+$f-regular: 400;
+$f-bold: 700;
+$f-black: 900;
+
+
+
+
+
+/* --------------- COLOR --------------- */
+
+/*========== name color ==========*/
+$cl-gull-gray: #99ABB7;
+$cl-outer-space: #2F383D;
+$cl-white: #FFF;
+$cl-black: #000;
+$cl-pale-sky-light: #6D7A83;
+$cl-loblolly: #C0CCD3;
+$cl-hit-gray: #9AA7AF;
+$cl-hit-gray-light: #A5B1B9;
+$cl-dodger-blue-light: #33CCFF;
+$cl-botticelli: #D8E4EC;
+$cl-dodger-blue: #21C2F8;
+$cl-shakespeare: #43a4cf;
+$cl-tropical-blue: #D5E9F8;
+$cl-regent-gray: #8A9CA9;
+$cl-pale-sky: #697782;
+$cl-cadet-blue: #A8B8C3;
+$cl-iron: #E1E4E7;
+$cl-gallery: #eee;
+$cl-green-yellow: #a0fc1c;
+$cl-bg-btn-slide: rgba(0, 0, 0, 0.5);
+$cl-shadow-btn: rgba(0, 0, 0, 1.5);
+$cl-icon-twitter: rgba(255, 255, 255, 0.2);
+$cl-tundora: #414141;
+$cl-allports: #0072a5;
+$cl-catskill-white: #eff5f7;
+$cl-wild-sand: #F5F5F5;
+$cl-mine-haft: #333;
+$cl-outer-space-dark: #2A3033;
+$cl-woodsmoke: #181C1E;
+$cl-transparent: rgba(255, 255, 255, 0);
+$cl-malibu: #c7ecf9;
+$cl-oslo-gray: #909698;
+$cl-shark: #202629;
+$cl-outer-space: #293136;
+$cl-heather: #C4D0D8;
+$cl-alto: #D2D2D2;
+$cl-shark: #212629;
+
+
+/*========== define color ==========*/
+
+$cl-active: $cl-outer-space;
+
+/*========== TEXT ==========*/
+$cl-text-font-base: $cl-gull-gray;
+$cl-text-title-section: $cl-outer-space;
+$cl-text-title-sm: $cl-outer-space;
+$cl-text-btn: $cl-white;
+
+$cl-text-top-header: $cl-loblolly;
+$cl-text-header-nav: $cl-pale-sky-light;
+$cl-text-mobile-btn-menu:$cl-white;
+$cl-text-mobile-sub-menu: $cl-pale-sky-light;
+$cl-text-mobile-sub-menu-hover: $cl-dodger-blue;
+$cl-text-mobile-sub-menu-active:$cl-outer-space;
+$cl-text-tablet-btn-menu:$cl-white;
+
+$cl-text-banner: $cl-white;
+$cl-text-banner-sub-title: $cl-white;
+$cl-text-banner: $cl-white;
+$cl-text-banner-btn: $cl-text-btn;
+
+$cl-text-purchase-now-desc: $cl-text-font-base;
+$cl-text-purchase-now-btn: $cl-text-btn;
+
+$cl-text-feature-title: $cl-outer-space;
+$cl-text-feature-desc: $cl-text-font-base;
+$cl-text-feature-btn: $cl-text-btn;
+
+$cl-text-portfolio-cate-active: $cl-white;
+$cl-text-portfolio-cate: $cl-text-font-base;
+$cl-text-button-category: $cl-tundora;
+
+$cl-text-profile: $cl-hit-gray;
+$cl-text-icon-portfolio: $cl-loblolly;
+$cl-text-name-portfolio: $cl-white;
+$cl-text-tablet-extend: $cl-dodger-blue;
+$cl-text-mobile-select-portfolio: $cl-regent-gray;
+$cl-text-mobile-btn-portfolio: $cl-white;
+
+$cl-icon-social-peope-say: $cl-white;
+
+$cl-text-tablet-mb-display: $cl-white;
+
+$cl-text-twitter: $cl-white;
+
+$cl-text-date-recent-blog: $cl-white;
+$cl-text-desc-recent-blog: $cl-dodger-blue-light;
+$cl-title-recent-blog: $cl-outer-space;
+
+$color-bar-skill: #000;
+$color-bar-skill-percent: $cl-dodger-blue;
+
+$cl-icon-core-feauter: $cl-white;
+$cl-text-core-feature: $cl-white;
+$cl-text-btn-read: $cl-dodger-blue;
+$cl-text-btn-purchase: $cl-white;
+
+$cl-text-why-adelfox-active: $cl-white;
+
+$cl-icon-welcome-adelfox: $cl-white;
+$cl-text-title-welcome-adelfox: $cl-dodger-blue;
+
+$cl-text-job-team: $cl-pale-sky-light;
+$cl-text--percent-capabilities: $cl-white;
+
+$cl-text-chart-active: $cl-outer-space;
+
+$cl-text-title-capabilities-hover: $cl-dodger-blue;
+$cl-icon-responsive: $cl-dodger-blue;
+
+$cl-icon-top-footer: $cl-oslo-gray;
+
+$cl-title-footer: $cl-tropical-blue;
+$cl-date-recent-footer: $cl-pale-sky-light;
+$cl-date-recent-footer-hover: $cl-white;
+$cl-icon-recent-footer: $cl-white;
+$cl-text-category-footer: $cl-gull-gray;
+
+/*========== background ==========*/
+$cl-bg-body: $cl-white;
+$cl-bg-top-header: $cl-white;
+$cl-bg-mobile-header: $cl-white;
+$cl-bg-slide: $cl-tundora;
+$cl-bg-purchase: $cl-catskill-white;
+$cl-bg-btn-slide: $cl-outer-space;
+$cl-bg-btn-active: $cl-outer-space;
+$cl-bg-mobile-item: $cl-white;
+$cl-bg-mobile-item-line: $cl-gull-gray;
+$cl-bg-mobile-item-click: $cl-gull-gray;
+$cl-bg-mobile-sub-menu: $cl-gallery;
+$cl-bg-mobile-item-menu-hover: $cl-gallery;
+$cl-bg-tablet-header: $cl-outer-space;
+$cl-bg-mobile-btn-menu:$cl-dodger-blue;
+$cl-bg-tablet-btn-menu:$cl-dodger-blue;
+$cl-bg-btn-default: $cl-dodger-blue;
+$cl-bg-btn-read-more: $cl-dodger-blue;
+$cl-bg-btn-read-more-hover: $cl-active;
+$cl-bg-portfolio-cate-active: $cl-dodger-blue;
+$cl-bg-category-slide: $cl-white;
+$cl-bg-category-slide-hover: $cl-dodger-blue-light;
+$cl-bg-btn-purchare: $cl-allports;
+$cl-bg-porfolio: $cl-catskill-white;
+
+$cl-bg-feature: $cl-white;
+$cl-bg-feature-icon: $cl-dodger-blue-light;
+
+$cl-bg-avatar: $cl-loblolly;
+$cl-bg-star-voted: $cl-dodger-blue;
+$cl-bg-star-unvoted: $cl-hit-gray;
+$cl-bg-btn-icon-portfolio: $cl-wild-sand;
+$cl-bg-img-portfolio: $cl-gull-gray;
+$cl-bg-social-btn-portfolio: $cl-dodger-blue;
+$cl-bg-text-portfolio: $cl-outer-space;
+$cl-bg-tablet-extend: $cl-shark;
+$cl-bg-tablet-plus: $cl-woodsmoke;
+$cl-bg-mobile-porfolio: $cl-wild-sand;
+$cl-bg-mobile-select-portfolio: $cl-dodger-blue;
+$cl-bg-mb-tb-indicator-portfolio:$cl-iron;
+$cl-bg-icon-mb-display: $cl-white;
+$cl-bg-tablet-icon-mb-display: $cl-transparent;
+
+$cl-bg-social-people-say: $cl-loblolly;
+$cl-bg-social-people-say-hover: $cl-dodger-blue;
+$cl-bg-star-people-say: $cl-white;
+
+$cl-bg-icon-twitter: $cl-dodger-blue-light;
+$cl-bg-button-twitter: $cl-mine-haft;
+$cl-bg-button-twitter-tablet: $cl-dodger-blue-light;
+
+$cl-bg-recent-blog: $cl-wild-sand;
+$cl-bd-date-recent-blog: $cl-dodger-blue-light;
+$cl-bd-date-recent-blog-hover: $cl-outer-space;
+$cl-bg-button-recent-blog: $cl-outer-space;
+
+$cl-bg-next-core-feature: $cl-bg-btn-slide;
+$cl-bg-btn-read-more: $cl-white;
+$cl-bg-btn-purchase-now: $cl-allports;
+
+$cl-bg-mb-display: $cl-white;
+
+$cl-bg-chart: $cl-dodger-blue;
+$cl-bg-chart-active: $cl-malibu;
+
+$cl-bg-why-adelfox: $cl-catskill-white;
+$cl-bg-btn-why-adelfox: $cl-white;
+$cl-bg-btn-why-adelfox-active: $cl-dodger-blue;
+
+$cl-bg-tab-services: $cl-heather;
+$cl-bg-tab-services-hover: $cl-regent-gray;
+$cl-bg-img-services: $cl-alto;
+
+$cl-bg-our-team: $cl-catskill-white;
+$cl-bg-img-team: $cl-gull-gray;
+$cl-bg-img-team-active: $cl-dodger-blue;
+$cl-bg-btn-resposive: $cl-allports;
+$cl-bg-text-team: $cl-white;
+
+$cl-bg-price-princing: $cl-dodger-blue;
+$cl-bg-item-princing: $cl-white;
+$cl-bg-item-princing-active: $cl-dodger-blue;
+$cl-bg-btn-princing: $cl-cadet-blue;
+$cl-bg-princing: $cl-wild-sand;
+
+$cl-bg-contact: $cl-white;
+$cl-bg-img-contact: $cl-gull-gray;
+$cl-bg-btn-contact: $cl-dodger-blue;
+
+$cl-bg-welcome-adelfox: $cl-catskill-white;
+$cl-bg-border-welcome-adelfox: $cl-dodger-blue;
+$cl-bg-bg-icon-welcome-edelfox: $cl-dodger-blue;
+
+$cl-bg-btn-purchase: $cl-allports;
+
+$cl-bg-footer: $cl-outer-space;
+$cl-bg-footer-bottom: $cl-shark;
+$cl-bg-category: $cl-shark;
+$cl-bg-list-img-recent-footer: $cl-hit-gray;
+$cl-bg-list-img-recent-footer-hover: $cl-dodger-blue;
+
+/*========== border ==========*/
+$cl-border-info-header: $cl-wild-sand;
+$cl-border-mobile-menu: $cl-gallery;
+$cl-border-mobile-menu-active: $cl-white;
+$cl-border-btn: $cl-gallery;
+$cl-border-feature-box: $cl-hit-gray;
+$cl-border-category: $cl-gull-gray;
+
+$cl-border-btn-purchase-now: $cl-shakespeare;
+
+$cl-border-mobile-portfolio: $cl-white;
+$cl-border-mobile-portfolio-section: $cl-loblolly;
+$cl-border-mobile-portfolio-select: $cl-hit-gray;
+
+$cl-border-date-recent-blog: $cl-dodger-blue-light;
+$cl-border-date-recent-blog-hover: $cl-outer-space;
+
+$cl-border-icon-mb-display: $cl-dodger-blue;
+
+$cl-border-prev-core-feature: $cl-white;
+$cl-border-next-core-feature: $cl-bg-btn-slide;
+
+$cl-border-icon-core-feature: $cl-white;
+$cl-border-why-adelfox: $cl-iron;
+
+$cl-border-img-welcome-adelfox: $cl-dodger-blue;
+
+$cl-border-chart-active: $cl-dodger-blue;
+
+$cl-border-img-box-team-active: $cl-dodger-blue;
+
+$cl-border-item-princing: $cl-regent-gray;
+
+$cl-border-input-contact: $cl-regent-gray;
+$cl-border-btn-contact: $cl-allports;
+
+$cl-border-top-footer: $cl-iron;
+
+/*========== modify bootstrap ==========*/
+$cl-bg-icon-bar: $cl-white;
+
+/*========== icon font ==========*/
+$cl-icon-top-header: $cl-dodger-blue;
+$cl-icon-mobile-search: $cl-dodger-blue;
+$cl-icon-search: $cl-gull-gray;
+$cl-icon-tablet-feature: $cl-white;
+$cl-icon-mb-display: $cl-dodger-blue;
+
+
+/* --------------- MARGIN --------------- */
+$margin-sm: 5px;
+$margin-md: px_to_rem(15px);
+$margin-lg: px_to_rem(30px);
+$margin-section: px_to_rem(100px);
+
+
+
+
+/* --------------- PADDING --------------- */
+$padding-xsm: 5px;
+$padding-sm: px_to_rem(10px);
+$padding-md: px_to_rem(15px);
+$padding-lg: px_to_rem(30px);
+$padding-section: px_to_rem(100px);
+
+
+
+
+
+/* --------------- ICON FONT --------------- */
+$icon-box: "\e909";
+$icon-zoom_out_map: "\e900";
+$icon-laptop: "\e901";
+$icon-lightbulb: "\e902";
+$icon-cube: "\e903";
+$icon-trophy: "\e904";
+$icon-chevron-left: "\e905";
+$icon-chevron-right: "\e906";
+$icon-youtube: "\e90c";
+$icon-check-circle-o: "\e90a";
+$icon-paper-plane-o: "\e908";
+$icon-droplet: "\e90b";
+$icon-camera: "\e90f";
+$icon-cart: "\e93a";
+$icon-phone: "\e942";
+$icon-envelop: "\e945";
+$icon-search: "\e986";
+$icon-plus: "\ea0a";
+$icon-minus: "\ea0b";
+$icon-google-plus: "\ea8b";
+$icon-twitter: "\ea96";
+$icon-flickr4: "\eaa6";
+$icon-tumblr: "\eab9";
+$icon-skype: "\eac5";
+$icon-linkedin2: "\eaca";
+$icon-lastfm: "\eacb";
+$icon-delicious: "\eacd";
+$icon-pinterest: "\ead1";
+$icon-shopping-bag: "\ead1";
+$icon-paper-plane:"\ead1";
+$icon-facebook:"\ead1";
+$icon-keyboard-arrow-down: "\e90d";
+$icon-star-full:"\e9d9";
+
+
+
+
+/* --------------- Size screen --------------- */
+$max-size-medium-screen: 991px;
+$max-size-small-screen: 767px;

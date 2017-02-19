@@ -1,0 +1,31 @@
+@media only screen and (min-width : $screen-xs) {
+  .c-top-footer {
+    .list-social-mobile-1 {
+      display: block;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .list-social-mobile-2 {
+      display: block;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__list {
+      &--wrapper {
+        display: none;
+      }
+
+      &--social {
+        font-size: px_to_rem(27px);
+        line-height: px_to_rem(45px);
+      }
+
+      &--social-1,
+      &--social-3,
+      &--social-11 {
+        display: block;
+      }
+    }
+  }
+}

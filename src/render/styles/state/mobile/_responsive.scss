@@ -1,0 +1,20 @@
+@media screen and (min-width: $screen-xs) {
+  .c-responsive {
+    padding-top: px_to_rem(50px);
+    padding-bottom: px_to_rem(45px);
+    &__img {
+      padding-bottom: px_to_rem(28px);
+    }
+    &__content {
+      text-align: left;
+    }
+    &__btn {
+      display: inline-block;
+      padding-top: $padding-md;
+    }
+    &__list {
+      margin-bottom: 0;
+      padding-bottom: $padding-sm;
+    }
+  }
+}

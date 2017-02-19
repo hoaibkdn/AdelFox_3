@@ -1,0 +1,5 @@
+include head.html.jade
+body.standard
+  include mixin/mixin.html.jade
+  block content
+  != getBlock('scripts').toHTML()

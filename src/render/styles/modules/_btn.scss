@@ -1,0 +1,30 @@
+.c-btn {
+  display: inline-block;
+  @include button-size(0, $padding-sm , px_to_rem(12px), px_to_rem(30px), 5px);
+  background: $cl-bg-btn-default;
+  color: $cl-text-btn;
+}
+
+.c-btn-active {
+  @extend .c-btn;
+  background: $cl-active;
+}
+
+.c-btn-lg {
+  @include button-size($padding-sm, $padding-sm , $f-size-small, px_to_rem(30px), 5px);
+  text-transform: uppercase;
+  color: $cl-text-btn;
+  background: $cl-bg-btn-default;
+  display: inline-block;
+}
+
+.c-btn-lg--under-line {
+  @extend .c-btn-lg;
+  background-color: $cl-bg-btn-purchare;
+  padding: $padding-md $padding-lg;
+  border-bottom: 3px solid $cl-border-btn-purchase-now;
+}
+
+.is-active {
+  background: $cl-active;
+}

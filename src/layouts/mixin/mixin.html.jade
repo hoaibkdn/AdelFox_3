@@ -1,0 +1,42 @@
+mixin icon-text(text)
+  a(href="#").c-icon-text.flex-box
+    .c-icon-text__img&attributes(attributes)
+    p.c-icon-text__content #{text}
+
+mixin text-nav(text)
+  a.c-icon-text.c-nav__group--item&attributes(attributes)
+    p.c-icon-text__content.c-nav__text #{text}
+    .c-icon-text__img.c-nav__icon	&#9671;
+
+mixin text-nav-mb(text)
+  a.c-icon-text.c-nav-mb__group--item
+    p.c-icon-text__content.c-nav-mb__text #{text}
+    .c-icon-text__img.c-nav-mb__icon
+
+mixin text-content(title, content)
+  .c-text-content
+    h5.c-text-content__title #{title}
+    p.c-text-content__content #{content}
+
+
+mixin btn-icon
+  .btn-icon
+    .btn-icon__img&attributes(attributes)
+
+
+mixin portfolio-desktop(title, content)
+  article.c-box-img
+    .c-box-img__btn
+      .c-box-img__btn--group.flex-box
+        +btn-icon.icon-zoom_out_map
+        +btn-icon.icon-skype  
+    .c-box-img__text
+      .c-box-img__text--center
+        .c-box-img__text--group.o-text
+          h5.o-text__title #{title}
+          p.o-text__content #{content}
+
+mixin tit-desc-section(title, desc)
+  .c-desc-section
+    h2.c-tit-desc-section #{title}
+    p.c-tit-desc__content #{desc}

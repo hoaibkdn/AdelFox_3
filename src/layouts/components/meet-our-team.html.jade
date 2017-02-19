@@ -1,0 +1,20 @@
+section.c-our-team
+  .container
+    .row
+      .c-our-team__title
+        +tit-desc-section("Meet our amazing team", "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal")
+      .c-our-team__members
+        - var members=[{"name":"Hei Ozamaer", "job": "Photographer", "desc" : "There are many variations of passages of Lorem Ipsum available"}, {"name":"Hei Ozamaer", "job": "Photographer", "desc" : "There are many variations of passages of Lorem Ipsum available"}, {"name":"Hei Ozamaer", "job": "Photographer", "desc" : "There are many variations of passages of Lorem Ipsum available"}, {"name":"Hei Ozamaer", "job": "Photographer", "desc" : "There are many variations of passages of Lorem Ipsum available"}]
+          each item in members
+            .col-md-3.col-sm-3.col-xs-12         
+              article.c-profile
+                .c-profile__img
+                  .c-profile__social-icon
+                    .c-profile__icon-group.flex-box
+                      +btn-icon.icon-facebook
+                      +btn-icon.icon-twitter
+                      +btn-icon.icon-pinterest
+                .c-profile__info.o-info
+                  p.o-info__name Hei Ozamaer
+                  p.o-info__job Photographer
+                  p.o-info__desc There are many variations of passages of Lorem Ipsum available

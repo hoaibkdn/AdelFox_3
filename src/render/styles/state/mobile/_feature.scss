@@ -1,0 +1,10 @@
+@media only screen and (min-width : $screen-xs) {
+  .c-feature {
+    &__box {
+      display: block;
+    }
+    &__box-tb {
+      display: none;
+    }
+  } 
+}

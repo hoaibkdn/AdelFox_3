@@ -1,0 +1,63 @@
+section.c-what-people-say
+  .c-what-people-say__wrapper
+    .container
+      .content-wrapper
+        h2.c-tit-desc-section What people say about us
+        .flex-box.c-what-people-say__desc
+          p.c-what-people-say__desc--content Maecenas bibendum lacus gravida placerat consequat. Vivamus quis hendrerit mauris. Vestibulum laoreet felis sed consectetur sollicitudin.
+        .c-what-people-say__content
+
+          .col-md-6.col-sm-5.col-xs-12
+            .c-what-people-say__content-client
+              //- desktop - mobile
+              .c-what-people-say__dt-mb
+                .c-what-people-say__content-client-avatar
+                  .c-what-people-say__content-client-avatar-circle
+                    a(href="javascript: void(0);")
+                      img.o-img(src="images/slice/general/content/avata_john_doe.png")
+                .c-what-people-say__content-client-desc
+                  h4.c-what-people-say__content-client-desc-name John Doe
+                  p October 26,2014
+                  hr.o-horizontal
+                  p.c-what-people-say__content-client-desc-text Maecenas bibendum lacus gravida placerat consequat. Vivamus quis hendrerit mauris. Vestibulum laoreet felis sed consectetur sollicitudin.
+                  - var social_list = ["icon-facebook", "icon-twitter", "icon-pinterest", "icon-tumblr"]
+                    ul.c-what-people-say__content-client-social
+                      each item in social_list
+                        li
+                          a(href="javascript: void(0);"): i(class="#{item}")
+                    .c-what-people-say__content-client-stars
+                      a(href="javascript: void(0);"): i.icon-star-full.star-voted.star
+                      a(href="javascript: void(0);"): i.icon-star-full.star-voted.star
+                      a(href="javascript: void(0);"): i.icon-star-full.star-voted.star
+                      a(href="javascript: void(0);"): i.icon-star-full.star-voted.star
+                      a(href="javascript: void(0);"): i.icon-star-full.star-unvoted.star
+            //- tablet
+            .c-what-people-say__tl
+              .col-sm-12
+                .c-what-people-say__content-client-avatar
+                    .c-what-people-say__content-client-avatar-circle
+                      a(href="javascript: void(0);")
+                        img.o-img(src="images/slice/general/content/avata_john_doe.png")
+                .c-what-people-say__content-client-desc
+                  h4.c-what-people-say__content-client-desc-name John Doe
+                  p October 26,2014
+                  - var social_list = ["icon-facebook", "icon-twitter", "icon-pinterest", "icon-tumblr"]
+                    ul.c-what-people-say__content-client-social
+                      each item in social_list
+                        li
+                          a(href="javascript: void(0);"): i(class="#{item}")
+                    .c-what-people-say__content-client-stars
+                      a(href="javascript: void(0);"): i.icon-star-full.star-voted.star
+                      a(href="javascript: void(0);"): i.icon-star-full.star-voted.star
+                      a(href="javascript: void(0);"): i.icon-star-full.star-voted.star
+                      a(href="javascript: void(0);"): i.icon-star-full.star-voted.star
+                      a(href="javascript: void(0);"): i.icon-star-full.star-unvoted.star
+              .col-sm-12
+                p.c-what-people-say__content-client-desc-text Maecenas bibendum lacus gravida placerat consequat. Vivamus quis hendrerit mauris. Vestibulum laoreet felis sed consectetur sollicitudin.
+          .col-md-6.col-sm-7.col-xs-12
+            ul.c-what-people-say__content-logo-list
+              - var logo_lists = [{"logo":"images/slice/general/content/logo_suse_hover.png", "alt":"logo suse"}, {"logo":"images/slice/general/content/logo_brilliant_hover.png", "alt":"logo brilliant"}, {"logo":"images/slice/general/content/logo_nuride_hover.png", "alt":"logo nuride"},{"logo":"images/slice/general/content/logo_techcombank_hover.png", "alt":"logo techcombank"},{"logo":"images/slice/general/content/logo_media_hover.png", "alt":"logo media"},{"logo":"images/slice/general/content/logo_livefire_hover.png", "alt":"logo livefire"}]
+                each logo_list in logo_lists
+                  li.col-md-4.col-sm-4.col-xs-6
+                    a(href="javascript: void(0);"): img.logo-effect(src="#{logo_list.logo}" alt="#{logo_list.alt")
+

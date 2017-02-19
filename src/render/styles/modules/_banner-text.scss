@@ -1,0 +1,80 @@
+.c-banner-text {
+  color: $cl-text-banner;
+  @extend %t-upper;
+  // @extend %position-center;
+  font-weight: $f-light;
+  &__title {
+    font-weight: $f-black;
+    font-size: px_to_rem(40px);
+  }
+  &__sub-title {
+    font-size: px_to_rem(26px);
+  }
+  &__desc {
+    font-size: px_to_rem(24px);
+    font-weight: normal;
+    text-transform: none;
+  }
+}
+
+//mobile
+@media only screen and (min-width : $screen-xs) {
+  .c-banner-text {
+    &__title {
+      font-size: 16px;
+      line-height: px_to_rem(20px);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    &__sub-title {
+      font-size: $f-size-small;
+      line-height: px_to_rem(20px);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    &__desc {
+      font-size: px_to_rem(11px);
+      line-height: px_to_rem(20px);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+// tablet
+@media only screen and (min-width : $screen-sm) {
+  .c-banner-text {
+    &__title {
+      font-size: px_to_rem(28px);
+      line-height: px_to_rem(30px);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    &__sub-title {
+      font-size: px_to_rem(15px);
+      line-height: px_to_rem(20px);
+    }
+    &__desc {
+      font-size: px_to_rem(12px);
+      line-height: px_to_rem(20px);
+    }
+  }
+}
+
+// desktop
+@media only screen and (min-width : $screen-md) {
+  .c-banner-text {
+    &__title {
+      font-size: 40px;
+      line-height: 35px;
+    }
+    &__sub-title {
+      font-size: px_to_rem(26px);
+      line-height: px_to_rem(35px);
+    }
+    &__desc {
+      font-size: px_to_rem(24px);
+      line-height: px_to_rem(30px);
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.c-twitter {
+  @extend %position-background;
+  @extend %t-center;
+  padding-top: px_to_rem(100px);
+  padding-bottom: px_to_rem(40px);
+  color: $cl-text-twitter;
+  &__box {
+    @extend %relative;
+    height: px_to_rem(90px);
+    &--icon {
+      @extend %position-center;
+      @extend %t-center;
+      @include circle(80px);
+      font-size: px_to_rem(35px);
+      line-height: 2.5;
+      background-color: $cl-bg-icon-twitter;
+      &:before {
+        content: "";
+        @extend %position-center;
+        @include circle(90px);
+        border: 5px solid $cl-icon-twitter;
+      }
+    }
+  }
+
+  &__title {
+    font-size: px_to_rem(24px);
+    line-height: px_to_rem(30px);
+    color: $cl-text-twitter;
+  }
+
+  &__desc {
+    font-size: $f-size-medium;
+    line-height: px_to_rem(30px);
+    padding-bottom: px_to_rem(10px);
+  }
+
+  &__button {
+    @extend %inline-block;
+    margin-bottom: px_to_rem(43px);
+    padding: px_to_rem(5px) px_to_rem(35px);
+  }
+  &__indicators {
+    .c-indicators {
+      li {
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .o-backgroup-btn {
+    background-color: $cl-bg-button-twitter;
+  }
+  .o-bg-indicator {
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

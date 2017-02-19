@@ -1,0 +1,55 @@
+.c-footer
+  .container
+    .col-md-3.col-sm-12.col-xs-12.c-footer__logo
+      h2.c-footer__logo--adelfox
+        img(src="images/slice/general/footer/logo_footer.png" alt="logo footer")
+      p.c-footer__logo--content Fusce gravida tortor felis, ac dictum risus sagittis id.
+      p.c-footer__logo--content Donec volutpat, mi vel egestas eleifend, dolor arcu iaculis nunc. Fusce gravida tortor felis, ac dictum risus sagittis id. Morbi posuere justo eleifend libero ultricies ultrices.
+      a.c-footer__logo--read(href="javascript:void(0);") Read more
+    .col-md-3.col-sm-12.col-xs-12.c-footer__recent
+      h4.c-footer__title Recent Post
+      - var recent = [{"img":"images/slice/general/footer/im_recent_post.png", "alt":"recent post", "content":"Fusce gravida tortor felis, ac dictum risus sagittis", "date": "October 15, 2013", "icon":"icon-plus"}, {"img":"images/slice/general/footer/im_recent_post.png", "alt":"recent post", "content":"Fusce gravida tortor felis, ac dictum risus sagittis", "date": "October 15, 2013", "icon":"icon-plus"}, {"img":"images/slice/general/footer/im_recent_post.png", "alt":"recent post", "content":"Fusce gravida tortor felis, ac dictum risus sagittis", "date": "October 15, 2013", "icon":"icon-plus"}]
+        .row
+          each item in recent
+            .col-md-12.col-sm-4.col-xs-12.c-footer__recent--post
+              .col-md-4.col-sm-4.col-xs-3
+                .c-footer__recent--img
+                  img(src="#{item.img}" alt="#{item.alt}")
+              .col-md-8.col-sm-8.col-xs-9
+                .c-footer__recent--desc
+                  p.c-footer__recent--desc-content #{item.content}
+                  p.c-footer__recent--desc-date #{item.date}
+    .col-md-3.col-sm-12.col-xs-12.c-footer__tags
+      h4.c-footer__title Tags
+      - var category = ["Awesome", "Photography", "Web Design", "Infographic", "Guitar", "Theme","Website", "Artist Design", "Themeforest", "Music" ]
+        ul.c-footer__tags
+          each item1 in category
+            li.c-footer__tags--category=item1
+    .col-md-3.col-sm-12.col-xs-12.c-footer__flickr
+      h4.c-footer__title Flickr Widget
+      //- desktop - tablet
+      .c-footer__list-img-dt
+        .col-md-12.col-sm-6.c-footer__list-img-tl
+          ul.c-footer__list-img
+            - var list_img = [{"img":"images/slice/general/footer/im_list_img.png", "alt":"list image"}, {"img":"images/slice/general/footer/im_list_img.png", "alt":"list image"}, {"img":"images/slice/general/footer/im_list_img.png", "alt":"list images"} ]
+              each item2 in list_img
+                li
+                  img.o-img(src="#{item2.img}" alt="#{item2.alt}")
+        .col-md-12.col-sm-6.c-footer__list-img-tl
+          ul.c-footer__list-img
+            - var list_img = [{"img":"images/slice/general/footer/im_list_img.png", "alt":"list image"}, {"img":"images/slice/general/footer/im_list_img.png", "alt":"list image"}, {"img":"images/slice/general/footer/im_list_img.png", "alt":"list images"} ]
+              each item2 in list_img
+                li
+                  img.o-img(src="#{item2.img}" alt="#{item2.alt}")
+      //- mobile
+      .c-footer__list-img-mb
+        ul.c-footer__list-img
+          - var list_img = [{"img":"images/slice/general/footer/im_list_img.png", "alt":"list image"}, {"img":"images/slice/general/footer/im_list_img.png", "alt":"list image"}, {"img":"images/slice/general/footer/im_list_img.png", "alt":"list images"}, {"img":"images/slice/general/footer/im_list_img.png", "alt":"list images"} ]
+            each item2 in list_img
+              li
+                img.o-img(src="#{item2.img}" alt="#{item2.alt}")
+        ul.c-footer__list-img
+          - var list_img = [{"img":"images/slice/general/footer/im_list_img.png", "alt":"list image"}, {"img":"images/slice/general/footer/im_list_img.png", "alt":"list image"}, {"img":"images/slice/general/footer/im_list_img.png", "alt":"list images"}, {"img":"images/slice/general/footer/im_list_img.png", "alt":"list images"}]
+            each item2 in list_img
+              li
+                img.o-img(src="#{item2.img}" alt="#{item2.alt}")

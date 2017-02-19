@@ -1,0 +1,182 @@
+// define navigation (menu bar) on header
+.c-nav {
+  &__text {
+    text-transform: capitalize;
+    color: $cl-text-header-nav;
+    font-size: $f-size-default;
+  }
+  &__icon {
+    padding: 0 5px; 
+    color: $cl-text-header-nav;
+    position: relative;
+    &:before {
+      content: "";
+      @include square-box(15px);
+      @extend %position-horizontal-center;
+      background: $cl-white;
+      top:0px;
+    }
+  }
+}
+
+.c-nav-mb {
+  &__text {
+      text-transform: capitalize;
+      color: $cl-text-header-nav;
+    }
+    &__icon {
+      @extend .icon-box;
+      padding: 0 5px; 
+      color: $cl-text-header-nav;
+    }
+}
+
+
+//mobile
+@media only screen and (min-width : $screen-xs) { 
+  .c-nav {
+    display: none;
+  }
+  .c-top-header__nav--mb {
+    display: block;
+    background: $cl-bg-mobile-btn-menu;
+  }
+  .c-nav-mb {
+    &__group {
+      position: absolute;
+      z-index: 10;
+      background: white;
+      color: black;
+      width: 100%;
+    }
+    &__box {
+      box-sizing: border-box;
+      &:hover {
+        background: $cl-bg-mobile-item-menu-hover;
+      }
+    }
+    &__item {
+      border-bottom: 1px solid $cl-border-mobile-menu;
+    }
+    &__sub-menu {
+      display: none;
+      text-align: left;
+      width: 100%;
+      border: none;
+      border-radius: 0; 
+      margin: 0;
+      background: $cl-bg-mobile-sub-menu;
+      box-sizing: border-box;
+      padding: 0 $padding-lg;
+      &--item {
+        border-top: 1px solid $cl-border-mobile-menu-active;
+        box-sizing: border-box;
+        padding: $padding-lg $padding-lg;
+      }
+      &--name {
+        text-transform: capitalize;
+        // color: $cl-text-mobile-sub-menu-active;
+        padding: $padding-md $padding-md $padding-lg 0;
+      }
+    }
+    &__child { 
+      color: $cl-text-mobile-sub-menu;
+      li {
+        padding: $padding-xsm 0;
+        list-style-type: disc;
+        font-size: px_to_rem(30px);
+        list-style-position: inside;
+        &:hover {
+          color: $cl-text-mobile-sub-menu-hover;
+          text-decoration: none;
+          & > a {
+            color: $cl-text-mobile-sub-menu-hover;
+          }
+        }
+      }
+      &--name {
+        position: relative;
+        left: -32px;
+        top: -3px;
+        color: $cl-text-mobile-sub-menu;
+        font-size: $f-size-medium;
+      }
+    }
+    &__item {
+      overflow: hidden;
+      display: block;
+      padding: $padding-sm 0;
+    }
+    &__text {
+      float: left;
+      text-transform: capitalize;
+    }
+    &__icon {
+      float: right;
+    }
+  }
+}
+
+//tablet
+@media only screen and (min-width : $screen-sm) {
+  .c-btn-menu {
+    padding: $padding-xsm;
+    background: $cl-bg-tablet-btn-menu;
+    &__text {
+      text-transform: uppercase;
+      padding: $padding-xsm;
+      color: $cl-text-tablet-btn-menu;
+      float: left;
+      margin: 0;
+    }
+    &__icon {
+      float: right;
+      padding: $padding-sm 0;
+    }
+  }
+  .navbar-nav,
+  .navbar-nav > li {
+    float: none;
+  }
+}
+
+@media only screen and (min-width : $screen-md) {
+  .c-top-header__nav--mb {
+    background: $cl-text-mobile-btn-menu;
+  }
+
+  .c-nav-mb__nav,
+  .c-nav-mb__info {
+    display: none;
+  }
+  .c-nav {
+    display: block;
+    &__group {
+      li {
+        display: inline-block;
+        a:hover {
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+      &--item {
+        padding-left: $padding-md;
+        &:after {
+          content: none;
+        } 
+      }
+    }
+    // &__icon {
+    //   padding: 0 5px; 
+    //   color: $cl-text-header-nav;
+    //   &:before {
+    //     @include square-box(10px);
+    //     // @extend %position-horizontal-center;
+    //     background: $cl-white;
+    //   }
+    // }
+  }
+  .c-nav-sub {
+    display: none;
+  }
+}

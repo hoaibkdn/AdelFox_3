@@ -1,0 +1,24 @@
+@media screen and (min-width: $screen-xs) {
+  .c-adelfox-service {
+    &__why,
+    &__service {
+      text-align: center;
+    }
+    .c-tit-desc-section {
+      padding-bottom: 0;
+    }
+  }
+  .o-tab__group {
+    li {
+      .mobile {
+        display: none;
+      }
+      width: 50%;
+    }
+    li:nth-child(2) {
+      & > a {
+        border-right: none;
+      }
+    }
+  }
+}

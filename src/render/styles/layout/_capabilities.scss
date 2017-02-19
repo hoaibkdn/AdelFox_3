@@ -1,0 +1,33 @@
+.c-capabilities {
+  &__desc {
+    justify-content: center;
+    line-height: px_to_rem(20px);
+
+    &--content {
+      max-width: 500px;
+      padding-bottom: px_to_rem(40px);
+      padding-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__chart {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      .c-text-content__title {
+        color: $cl-text-title-capabilities-hover;
+      }
+    }
+  }
+
+  &__title {
+    margin-top: px_to_rem(30px);
+  }
+
+  &__content {
+    margin-top: px_to_rem(20px);
+  }
+}

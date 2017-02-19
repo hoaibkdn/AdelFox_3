@@ -1,0 +1,64 @@
+@import "variables";
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?lce5pu');
+  src:  url('../fonts/icomoon/icomoon.eot?lce5pu#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?lce5pu') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?lce5pu') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?lce5pu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@include n_icon('icon-box', $icon-box);
+@include n_icon('icon-zoom_out_map', $icon-zoom_out_map);
+@include n_icon('icon-laptop', $icon-laptop);
+@include n_icon('icon-lightbulb', $icon-lightbulb);
+@include n_icon('icon-cube', $icon-cube);
+@include n_icon('icon-trophy', $icon-trophy);
+@include n_icon('icon-chevron-left', $icon-chevron-left);
+@include n_icon('icon-chevron-right', $icon-chevron-right);
+@include n_icon('icon-youtube', $icon-youtube);
+@include n_icon('icon-check-circle-o', $icon-check-circle-o);
+@include n_icon('icon-shopping-bag', $icon-shopping-bag);
+@include n_icon('icon-paper-plane', $icon-paper-plane);
+@include n_icon('icon-droplet', $icon-droplet);
+@include n_icon('icon-camera', $icon-camera);
+@include n_icon('icon-cart', $icon-cart);
+@include n_icon('icon-phone', $icon-phone);
+@include n_icon('icon-envelop', $icon-envelop);
+@include n_icon('icon-search', $icon-search);
+@include n_icon('icon-plus', $icon-plus);
+@include n_icon('icon-google-plus', $icon-google-plus);
+@include n_icon('icon-facebook', $icon-facebook);
+@include n_icon('icon-twitter', $icon-twitter);
+@include n_icon('icon-flickr4', $icon-flickr4);
+@include n_icon('icon-tumblr', $icon-tumblr);
+@include n_icon('icon-skype', $icon-skype);
+@include n_icon('icon-linkedin2', $icon-linkedin2);
+@include n_icon('icon-lastfm', $icon-lastfm);
+@include n_icon('icon-delicious', $icon-delicious);
+@include n_icon('icon-pinterest', $icon-pinterest);
+@include n_icon('icon-star-full', $icon-star-full);
+@include n_icon('icon-keyboard-arrow-down', $icon-keyboard-arrow-down);
+
+
+// $icon-classes: ("icon-box" $icon-box) ("icon-zoom_out_map" $icon-zoom_out_map) ("icon-laptop" $icon-laptop) ("icon-lightbulb" $icon-lightbulb) ("icon-cube" $icon-cube) ("icon-trophy" $icon-trophy) ("icon-chevron-left" $icon-chevron-left) ("icon-chevron-right" $icon-chevron-right) ("icon-youtube" $icon-youtube) ("icon-check-circle-o" $icon-check-circle-o) ("icon-shopping-bag" $icon-shopping-bag) ("icon-paper-plane" $icon-paper-plane) ("icon-droplet" $icon-droplet) ("icon-camera" $icon-camera) ("icon-cart" $icon-cart) ("icon-phone" $icon-phone) ("icon-envelop" $icon-envelop) ("icon-search" $icon-search) ("icon-plus" $icon-plus) ("icon-minus" $icon-minus) ("icon-google-plus" $icon-google-plus) ("icon-facebook" $icon-facebook) ("icon-twitter" $icon-twitter) ("icon-flickr4" $icon-flickr4) ("icon-twitter" $icon-twitter) ("icon-tumblr" $icon-tumblr) ("icon-skype" $icon-skype) ("icon-linkedin2" $icon-linkedin2) ("icon-lastfm" $icon-lastfm) ("icon-delicious" $icon-delicious) ("icon-pinterest" $icon-pinterest);
+
+// @each $item in $icon-classes {
+//   @include n_icon(#{nth($item,1)}, nth($item, 2));
+// }

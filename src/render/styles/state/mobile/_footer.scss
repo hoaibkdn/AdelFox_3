@@ -1,0 +1,20 @@
+@media only screen and (min-width : $screen-xs) {
+  .c-footer {
+    // desktop and tablet
+    &__list-img-dt {
+      display: none;
+    }
+    // mobile
+    &__list-img-mb {
+      display: block;
+    }
+
+    &__list-img {
+      li {
+        width: calc(100%/4);
+        padding: 0 6.5px;
+        padding-bottom: 13px;
+      }
+    }
+  }
+}

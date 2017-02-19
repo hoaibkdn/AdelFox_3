@@ -1,0 +1,97 @@
+.c-profile {
+  box-sizing: border-box;
+  border-bottom: 7px solid $cl-transparent;
+  &__img {
+    height: px_to_rem(220px);
+    background: $cl-bg-img-team;
+    position: relative;
+  }
+  &__social-icon {
+    display: none;
+  }
+  &__info {
+    padding: $padding-md;
+    background: $cl-bg-text-team;
+  }
+  &:hover {
+    cursor: pointer;
+    border-color: $cl-bg-img-team-active;
+    .c-profile {
+      &__img {
+        background: $cl-bg-img-team-active;
+      }
+      &__social-icon {
+        display: block;
+        @extend %position-center;
+      }
+    }
+    .btn-icon {
+      margin: 2px;
+      &:hover {
+        .btn-icon__img {
+          color: $cl-bg-img-team-active;
+        }
+      }
+    }
+  }
+  margin-bottom: $margin-md;
+}
+
+.o-info {
+  text-align: left;
+  &__name {
+    color: $cl-text-title-sm;
+    margin-bottom:3px;
+  }
+  &__job {
+    color: $cl-text-job-team;
+  }
+}
+
+@media screen and (min-width: $screen-sm ) and (max-width: $max-size-medium-screen) {
+  .c-profile {
+    &:hover {
+      border-color: $cl-transparent;
+      .c-profile__social-icon {
+        display: none;
+      }
+      .c-profile__img {
+        background: $cl-bg-img-team;
+      }
+    }
+  }
+  .c-profile {
+    .c-profile__img {
+      @include circle(px_to_rem(120px));
+      background: $cl-bg-img-team;
+      position: relative;
+      &:hover:before {
+        content: "+";
+        font-size: px_to_rem(50px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $cl-white;
+      } 
+      &:hover {
+        background: $cl-bg-img-team-active;
+      }
+    }
+    &__info {
+      background: $cl-transparent;
+    }
+  }
+  .o-info {
+    &__desc {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-xs ) and (max-width: $max-size-small-screen) {
+  .c-profile {
+    margin-left: px_to_rem(32px);
+    margin-right: px_to_rem(32px);
+  }
+}

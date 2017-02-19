@@ -1,0 +1,12 @@
+@media only screen and (min-width : $screen-sm) {
+  .c-feature {
+    margin-top: $margin-section;
+    padding-bottom: px_to_rem(83px);
+    &__box {
+      display: none;
+    }
+    &__box-tb {
+      display: block;
+    }
+  }
+}

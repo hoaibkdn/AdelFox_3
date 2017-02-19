@@ -1,0 +1,17 @@
+@media only screen and (min-width : $screen-md) {
+  .c-search {
+    display: inline-block;
+  }
+  .c-info {
+    display: block;
+    background: $cl-bg-top-header;
+    border-bottom: 2px solid $cl-border-info-header;
+  }
+  .c-top-header {
+    background: $cl-bg-top-header;
+  }
+  .c-top-header__nav--tb,
+  .c-top-header__nav--mb {
+    display: none;
+  }
+}

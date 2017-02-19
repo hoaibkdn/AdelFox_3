@@ -1,0 +1,46 @@
+
+.c-btn-arrow {
+  // @include square-box(60px);
+  @extend %t-center;
+  background-color: $cl-bg-btn-slide;
+  line-height: 3;
+  @extend %position-vertical-center;
+  font-size: px_to_rem(22px);
+  line-height: 3;
+  &-prev {
+    left: 0;
+    & > i {
+      @extend %position-center;
+    }
+  }
+  &-next {
+    right: 0;
+    & > i {
+      @extend %position-center;
+    }
+  }
+}
+
+//mobile
+@media only screen and (min-width: $screen-xs) {
+  .c-btn-arrow {
+    width: px_to_rem(30px);
+    height: px_to_rem(30px);
+  }
+}
+
+// tablet
+@media only screen and (min-width: $screen-sm) {
+  .c-btn-arrow {
+    width: px_to_rem(30px);
+    height: px_to_rem(30px);
+  }
+}
+
+// desktop
+@media only screen and (min-width: $screen-md) {
+  .c-btn-arrow {
+    width: px_to_rem(60px);
+    height: px_to_rem(60px);
+  }
+}

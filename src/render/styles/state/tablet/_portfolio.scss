@@ -1,0 +1,25 @@
+@media only screen and (min-width : $screen-sm) {
+  .c-portfolio {
+    padding-top: px_to_rem(77px);
+    padding-right: 0;
+    padding-left: 0;
+    border: 0;
+    &__categories--dt {
+      display: flex;
+    }
+    &__categories--mb {
+      display: none;
+    }
+    &__btn--left,
+    &__btn--right {
+      display: block;
+    }
+  }
+  .c-box-img,
+  .c-box-img-mb {
+    display: none;
+  }
+  .c-box-img-tb{
+    display: flex;
+  }
+}

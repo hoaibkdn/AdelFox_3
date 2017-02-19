@@ -1,0 +1,24 @@
+section.c-recent-blog
+  .container
+    .content-wrapper
+      h2.c-tit-desc-section Breaking News
+      .row.flex-box.c-recent-blog__desc
+        p.c-recent-blog__desc--content Maecenas bibendum lacus gravida placerat consequat. Vivamus quis hendrerit mauris. Vestibulum laoreet felis sed consectetur sollicitudin.
+      .row
+        - var news = [{"image":"images/slice/general/content/im_recent_blog.png", "alt":"recent blog","month":"oct", "day":"16", "title": "Nullam nunc purus, pretium sed faucibus nec.", "content": "Nunc purus orci, adipiscing non ipsum non, pellentesque fringilla sapien. "},{"image":"images/slice/general/content/im_recent_blog.png", "alt":"recent blog","month":"oct", "day":"20", "title": "Nullam nunc purus, pretium sed faucibus nec.", "content": "Nunc purus orci, adipiscing non ipsum non, pellentesque fringilla sapien. "},{"image":"images/slice/general/content/im_recent_blog.png", "alt":"recent blog","month":"oct", "day":"21", "title": "Nullam nunc purus, pretium sed faucibus nec.", "content": "Nunc purus orci, adipiscing non ipsum non, pellentesque fringilla sapien. "}, {"image":"images/slice/general/content/im_recent_blog.png", "alt":"recent blog", "month":"oct", "day":"22", "title": "Nullam nunc purus, pretium sed faucibus nec.", "content": "Nunc purus orci, adipiscing non ipsum non, pellentesque fringilla sapien. "}, {"image":"images/slice/general/content/im_recent_blog.png", "alt":"recent blog", "month":"oct", "day":"23", "title": "Nullam nunc purus, pretium sed faucibus nec.", "content": "Nunc purus orci, adipiscing non ipsum non, pellentesque fringilla sapien. "}, {"image":"images/slice/general/content/im_recent_blog.png", "alt":"recent blog", "month":"oct", "day":"24", "title": "Nullam nunc purus, pretium sed faucibus nec.", "content": "Nunc purus orci, adipiscing non ipsum non, pellentesque fringilla sapien. "}]
+        each item in news
+          .col-md-4.col-xs-12.col-sm-6
+            article.c-box-news.col-xs-12
+              .col-xs-6
+                .row
+                  .c-box-news__image
+                    img(src="#{item.image}" alt="#{item.alt}")
+                    .c-box-news__date
+                      h5.c-box-news__date-month #{item.month}
+                      h4.c-box-news__date-day #{item.day}
+              .col-xs-6
+                .c-box-news__desc
+                h4.c-box-news__desc-title #{item.title}
+                p.c-box-news__desc-text #{item.content}
+      .c-recent-blog__button
+          a.c-btn-lg.o-btn-lg(href="javascript:void(0);") Load More Post

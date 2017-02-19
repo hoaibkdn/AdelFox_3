@@ -1,0 +1,18 @@
+// mobile
+@media only screen and (min-width : 768px) {
+  .c-twitter {
+    background-image: url(../../images/slice/tablet/bg_twitter.png);
+    padding-top: px_to_rem(100px);
+    padding-bottom: px_to_rem(26px);
+    &__title {
+      padding-top: px_to_rem(34px);
+    }
+    &__button {
+      margin-bottom: px_to_rem(64px); 
+      background-color: $cl-bg-button-twitter-tablet;
+    }
+    .o-backgroup-btn {
+      background-color: $cl-bg-button-twitter-tablet;
+    }
+  }
+}

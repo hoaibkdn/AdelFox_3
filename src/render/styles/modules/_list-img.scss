@@ -1,0 +1,44 @@
+.c-list-img {
+  @extend %relative;
+  width: 100%;
+  height: px_to_rem(185px);
+  display: inline-block;
+  &__icons {
+    display: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+    border-bottom: 5px solid $cl-border-img-welcome-adelfox;
+    box-sizing: border-box;
+    .c-list-img {
+      z-index: 2;
+      &__icons {
+        @extend %position-center;
+        @extend %block;
+        @include circle(50px);
+        font-size: 20px;
+        background: $cl-bg-bg-icon-welcome-edelfox;
+        z-index: 10;
+        line-height: 2.6;
+        color: $cl-icon-welcome-adelfox;
+
+        .btn-icon {
+          margin: $margin-sm;
+        }
+      }
+    }
+    &:after {
+      @extend %absolute;
+      z-index: 1;
+      content: "";
+      height: 50px;
+      width: 35px;
+      transform: rotate(45deg);
+      top: 86%;
+      bottom: 0;
+      right: -7%;
+      background-color: $cl-bg-border-welcome-adelfox;
+    }
+  }
+}

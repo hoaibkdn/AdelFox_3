@@ -1,0 +1,37 @@
+@media screen and (min-width: $screen-sm) {
+  .c-mobile-display {
+    background: url("../images/slice/tablet/bg_mobile_display.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    &-flex {
+      display: flex;
+      align-items: flex-end;
+    }
+    &__content {
+      text-align: left;
+    }
+    &--tb {
+      display: block;
+    }
+    &--mb {
+      display: none;
+    }
+    &__btn {
+      &--learn,
+      &--purchase {
+        border: 1px solid $cl-text-tablet-mb-display;
+        background: $cl-bg-tablet-icon-mb-display;
+        &:hover {
+          background: $cl-bg-btn-default;
+          border: 1px solid $cl-bg-btn-default;
+        }
+      }
+    }
+    .c-desc-section {
+      padding: 0;
+    }
+    .c-tit-desc-section {
+      color: $cl-text-tablet-mb-display; 
+    }
+  }
+}

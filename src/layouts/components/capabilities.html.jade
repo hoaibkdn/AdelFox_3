@@ -1,0 +1,19 @@
+.c-capabilities
+  .container
+    .content-wrapper
+      h2.c-tit-desc-section AdelFox’s Capabilities
+      .c-capabilities__desc.row.flex-box
+        p.c-capabilities__desc--content Maecenas bibendum lacus gravida placerat consequat. Vivamus quis hendrerit mauris. Vestibulum laoreet felis sed consectetur sollicitudin.
+      .row
+      - var capabilities = [{"percent":"c-chart__75","number_percent":"75%", "title":"Adibe photoshop", "desc":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"},{"percent":"c-chart__90", "number_percent":"90%", "title":"Javascript", "desc":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"}, {"percent":"c-chart__77", "number_percent":"77%", "title":"Photograpy", "desc":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"}, {"percent":"c-chart__65", "number_percent":"65%", "title":"Wordpress", "desc":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"}]
+        each item in capabilities
+          .col-md-3.col-sm-3.col-xs-12.c-capabilities__chart
+            .c-capabilities__chart
+              .c-chart
+                span.c-chart__text=item.number_percent
+                .c-chart__slice
+                  .c-chart__percent(class=item.percent)
+                  .c-chart__fill
+            .c-text-content
+              h4.c-text-content__title #{item.title}
+              p.c-text-content__content #{item.desc}

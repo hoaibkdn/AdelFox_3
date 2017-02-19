@@ -1,0 +1,8 @@
+@media only screen and (min-width: $screen-xs) {
+  .order-tablet {
+    display: none;
+  }
+  .order-desktop {
+    display: block;
+  }
+}

@@ -1,0 +1,21 @@
+.c-top-footer
+  .container
+    .row
+      ul.c-top-footer__list
+        .c-top-footer__list--wrapper
+          - var list_social = [{"list":"c-top-footer__list--social-1", "icon":"icon-google-plus"}, {"list":"c-top-footer__list--social-2", "icon":"icon-flickr4"}, {"list":"c-top-footer__list--social-3", "icon":"icon-lastfm"}, {"list":"c-top-footer__list--social-4", "icon":"icon-box"}, {"li":"c-top-footer__list--social-5", "icon":"icon-pinterest"}, {"list":"c-top-footer__list--social-6", "icon":"icon-delicious"}, {"list":"c-top-footer__list--social-7", "icon":"icon-youtube"}, {"list":"c-top-footer__list--social-8", "icon":"icon-facebook"}, {"list":"c-top-footer__list--social-9", "icon":"icon-twitter"}, {"list":"c-top-footer__list--social-10", "icon":"icon-tumblr"}, {"list":"c-top-footer__list--social-11", "icon":"icon-linkedin2"}, {"list":"c-top-footer__list--social-12", "icon":"icon-droplet"}]
+            each item in list_social
+              li.col-md-1.col-sm-1.icons-tablet.c-top-footer__list--social(class="#{item.list}")
+                i(class="#{item.icon}")
+
+        //- mobile
+        .col-xs-12.list-social-mobile-1
+          - var list_social1 = [{"list":"c-top-footer__list--social-1", "icon":"icon-google-plus"}, {"list":"c-top-footer__list--social-2", "icon":"icon-flickr4"}, {"list":"c-top-footer__list--social-3", "icon":"icon-lastfm"}, {"list":"c-top-footer__list--social-4", "icon":"icon-box"}, {"li":"c-top-footer__list--social-5", "icon":"icon-pinterest"}, {"list":"c-top-footer__list--social-6", "icon":"icon-delicious"}]
+            each item1 in list_social1
+              li.col-xs-2.c-top-footer__list--social(class="#{item1.list}")
+                i(class="#{item1.icon}")
+        .col-xs-12.list-social-mobile-2
+          - var list_social2 = [{"list":"c-top-footer__list--social-7", "icon":"icon-youtube"}, {"list":"c-top-footer__list--social-8", "icon":"icon-facebook"}, {"list":"c-top-footer__list--social-9", "icon":"icon-twitter"}, {"list":"c-top-footer__list--social-10", "icon":"icon-tumblr"}, {"list":"c-top-footer__list--social-11", "icon":"icon-linkedin2"}, {"list":"c-top-footer__list--social-12", "icon":"icon-droplet"}]
+            each item2 in list_social2
+              li.col-xs-2.c-top-footer__list--social(class="#{item2.list}")
+                i(class="#{item2.icon}")

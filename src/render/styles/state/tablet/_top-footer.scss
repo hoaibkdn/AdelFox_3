@@ -1,0 +1,37 @@
+@media only screen and (min-width :  768px) {
+  .c-top-footer {
+    .list-social-mobile-1 {
+      display: none;
+    }
+
+    .list-social-mobile-2 {
+      display: none;
+    }
+
+    .icons-tablet {
+      width: 11%;
+    }
+
+    &__list {
+      &--wrapper {
+        display: block;
+      }
+
+      .col-xs-1 {
+        width: 11%;
+      }
+
+      &--social {
+        font-size: px_to_rem(25px);
+        padding-top: px_to_rem(30px);
+        padding-bottom: px_to_rem(30px);
+      }
+
+      &--social-1,
+      &--social-3,
+      &--social-11 {
+        display: none;
+      }
+    }
+  }
+}

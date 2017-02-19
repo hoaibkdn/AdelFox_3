@@ -1,0 +1,9 @@
+// desktop
+@media only screen and (min-width : 992px) {
+  .c-twitter {
+    background-image: url(../../images/slice/general/content/slide_twitter.png);
+    .o-backgroup-btn {
+      background-color: $cl-bg-button-twitter;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@media screen and (min-width: 320px) {
+  .c-slide {
+    @include size-box(100%, 250px);
+    background-image: url(../../images/slice/mobile/banner.png);
+    &__desc {
+      margin-top: px_to_rem(50px);
+      &-text {
+        display: block;
+        text-align: center;
+        max-width: 70%;
+        float: none;
+      }
+
+      &-indicators {
+        @include size-box(100%, 40px);
+        margin-top: px_to_rem(30px);
+        display: block;
+        text-align: center;
+        float: none;
+      }
+    }
+    .c-btn-slide {
+      margin-left: 30%;
+    }
+
+  }
+  .c-slide__desc-text{
+    a.c-btn-slide {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+// define categories for portfolio
+.o-categories {
+  position: relative;
+  &__item {
+    padding: 3px px_to_rem(25px);
+    text-transform: capitalize;
+    &:hover {
+      @extend .c-btn__active;
+    }
+  }
+  &__select {
+    border: 1px solid $cl-border-mobile-portfolio-select;
+    height: px_to_rem(45px); 
+    color: $cl-text-mobile-select-portfolio;
+  }
+  &__btn {
+    position: absolute;
+    background: $cl-bg-mobile-select-portfolio;
+    right: 2px;
+    top: 2px;
+    padding: 6px 6px;
+    border: 0;
+    font-size: $f-size-large;
+    color: $cl-text-mobile-btn-portfolio;
+    line-height: px_to_rem(30px);
+  }
+}
+.c-btn {
+  &__active {
+    color: $cl-text-portfolio-cate-active;
+    background-color: $cl-bg-portfolio-cate-active;
+    border: 1px solid $cl-bg-portfolio-cate-active;
+  }
+}
+
+@media only screen and (min-width : $screen-xs) {
+  .o-categories {
+    &__select {
+      height: px_to_rem(32px); 
+    }
+    &__btn {
+      font-size: $f-size-small;
+      line-height: 16px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@media only screen and (min-width: $screen-sm) and (max-width: $max-size-medium-screen) {
+  .o-tab__group {
+    li {
+      width: 25%;
+      .mobile,
+      .tablet {
+        display: block;
+      }
+      .tablet {
+        height: px_to_rem(42px);
+      }
+    }
+    li:nth-child(2),
+    li:nth-child(3) {
+      & > a {
+        border-right: 1px solid $cl-white;;
+      }
+    }
+  }
+  .c-adelfox-service {
+    .c-desc-section {
+      text-align: center;
+      width: px_to_rem(500px);
+      margin: auto;
+    }
+  }
+}

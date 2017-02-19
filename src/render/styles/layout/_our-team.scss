@@ -1,0 +1,17 @@
+.c-our-team {
+  background: $cl-bg-our-team;
+  padding: $padding-lg 0;
+  &__title {
+    width: px_to_rem(550px);
+    margin: auto;
+    padding-bottom: $padding-lg;
+  }
+}
+
+@media screen and (min-width: $screen-xs) and (max-width: $screen-md) {
+  .c-our-team__title {
+    width: auto;
+    padding-left: px_to_rem(40px);
+    padding-right: px_to_rem(40px);
+  }
+}

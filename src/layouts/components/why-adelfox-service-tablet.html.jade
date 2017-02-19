@@ -1,0 +1,42 @@
+section.c-adelfox-service
+  .container
+    .row
+      .col-md-6.col-xs-12
+        .c-adelfox-service__why
+          +tit-desc-section("why adelFox?", "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum")
+          .c-adelfox-service__why--content
+            -var reasons = [{"reasons_name":"our solution", "href":"#solution-tb", "aria_controls": "solution-tb", "content": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy."}, {"reasons_name":"our technology", "href":"#technology-tb", "aria_controls": "technology-tb", "content": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy."}, {"reasons_name":"our mission", "href":"#mission-tb", "aria_controls": "mission-tb", "content": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy."}, {"reasons_name":"our vison", "href":"#vison-tb", "aria_controls": "vison-tb", "content": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy."}]
+              each item in reasons
+                .o-reason
+                    a.o-reason__btn(role="button" data-toggle="collapse" href=item.href aria-expanded="false" aria-controls=item.aria_controls)=item.reasons_name
+                    .o-reason__content.collapse(id=item.aria_controls)=item.content
+      .col-md-6.col-xs-12
+        .c-adelfox-service__service
+          +tit-desc-section("our services", "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum")
+          .c-adelfox-service__tab.o-tab
+            ul.nav.nav-tabs(role="tablist").o-tab__group
+              li(role="presentation").active
+                a(href="#web-design-tb", aria-controls="web-design-tb", role="tab", data-toggle="tab") web design
+              li(role="presentation")
+                a(href="#marketing-tb", aria-controls="marketing-tb", role="tab", data-toggle="tab") marketing
+              li(role="presentation")
+                a.mobile(href="#art-photo-tb", aria-controls="art-photo-tb", role="tab", data-toggle="tab") art photography
+              li(role="presentation")
+                a.tablet.mobile(href="#none-tb", aria-controls="art-photo-tb", role="tab", data-toggle="tab") 
+            .tab-content.o-tab__content
+              #web-design-tb.tab-pane.media.active(role="tabpanel")
+                .o-tab__content--img
+                .o-tab__content--text 
+                  p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                  p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+              #marketing-tb.tab-pane(role="tabpanel") 
+                .o-tab__content--img
+                .o-tab__content--text 
+                  p Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text. 
+                  p Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text
+              #art-photo-tb.tab-pane(role="tabpanel") 
+                .o-tab__content--img
+                .o-tab__content--text 
+                  p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. 
+                  p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
+              #none-tb.tab-pane(role="tabpanel") 

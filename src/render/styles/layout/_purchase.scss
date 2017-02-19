@@ -1,0 +1,43 @@
+.c-purchase {
+  background: url("../images/slice/general/content/bg_purchase.png");
+  padding: $padding-lg 0;
+  &__title {
+    margin-top: 0;
+    color: $cl-white;
+    padding: $padding-lg;
+    padding-bottom: 0;
+    font-size: px_to_rem(36px);
+    text-transform: none;
+  }
+  &__content {
+    color: $cl-white;
+    font-size: px_to_rem(16px);
+    padding: $padding-md;
+    line-height: px_to_rem(30px);
+  }
+  &__btn {
+    margin-top: $margin-md;
+    margin-bottom: $margin-lg;
+    &--purchase {
+      color: $cl-white;
+      text-transform: uppercase;
+      background: $cl-bg-btn-purchase;
+      padding: $padding-sm $padding-md;
+      border: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: $screen-sm) and (max-width: $max-size-medium-screen) {
+  .c-purchase {
+    background: url("../images/slice/tablet/bg_purchase.png");
+    padding: $padding-section 0;
+    &__title {
+      padding-top: 0;
+      padding-bottom: px_to_rem(15px);
+    }
+    &__btn {
+      margin-bottom: 0;
+    }
+  }
+}

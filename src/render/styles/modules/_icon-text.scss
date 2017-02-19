@@ -1,0 +1,13 @@
+// define icon and text on top header
+.c-icon-text {
+  padding-right: $padding-sm;
+  &__img {
+    padding: 7px $padding-xsm 0 0;
+    color: $cl-icon-top-header;
+  }
+  &__content {
+    padding-top: 7px; 
+    font-size: px_to_rem(12px);
+    color: $cl-text-top-header;
+  }
+}

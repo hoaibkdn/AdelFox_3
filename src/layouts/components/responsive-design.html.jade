@@ -1,0 +1,29 @@
+.c-responsive
+  .container
+    .row
+      .col-md-6.col-sm-6.col-xs-12
+        img.c-responsive__img(src="images/slice/general/content/im_enjoy.png" alt="responsive mobile")
+      .col-md-6.col-sm-6.col-xs-12
+        .c-responsive__content
+          h2.c-tit-desc-section Are you ready to Enjoy
+          p.c-responsive__desc Maecenas bibendum lacus gravida placerat consequat. Vivamus quis hendrerit mauris. Vestibulum laoreet felis sed consectetur sollicitudin.
+          .col-xs-12
+            .row 
+              .col-md-6.col-sm-6.col-xs-12
+                .row
+                  ul.c-responsive__list
+                    - var responsive1 = [{"icon" : "icon-check-circle-o", "desc": "Clear and Clean Design"}, {"icon" : "icon-check-circle-o", "desc": "Responsive Design"}, {"icon" : "icon-check-circle-o", "desc": "Retina Ready"}, {"icon" : "icon-check-circle-o", "desc": "Unique Portfolio and Blog"}, {"icon" : "icon-check-circle-o", "desc": "Full Shortcodes Design"}]
+                      each item1 in responsive1
+                        li.c-responsive__list--item.media
+                          i.c-responsive__list--icons.media-left(class="#{item1.icon}")
+                          p.media-body #{item1.desc}
+              .col-md-6.col-sm-6.col-xs-12
+                .row
+                  ul.c-responsive__list
+                    - var responsive2 = [{"icon" : "icon-check-circle-o", "desc": "PSD Template"}, {"icon" : "icon-check-circle-o", "desc": "Themeforest"}, {"icon" : "icon-check-circle-o", "desc": "Corporate Theme"}, {"icon" : "icon-check-circle-o", "desc": "Layer Sliders"}, {"icon" : "icon-check-circle-o", "desc": "Modern Design"}]
+                      each item2 in responsive2
+                        li.c-responsive__list--item.media
+                          i.c-responsive__list--icons.media-left(class="#{item2.icon}")
+                          p.media-body #{item2.desc}
+          .c-responsive__btn
+            a.c-btn-lg purchase now

@@ -1,0 +1,173 @@
+@include font-family('Lato-Black');
+@include font-family('Lato-Bold');
+@include font-family('Lato-Hairline');
+@include font-family('Lato-Italic');
+@include font-family('Lato-Light');
+@include font-family('Lato-Regular');
+
+%f-lato-black {
+  font-family: 'Lato-Black';
+}
+
+%f-lato-bold {
+  font-family: 'Lato-Bold';
+}
+
+%f-lato-hairline {
+  font-family: 'lato-Hairline';
+}
+
+%f-lato-italic {
+  font-family: 'lato-Italic';
+}
+
+%f-lato-light {
+  font-family: 'lato-light';
+}
+
+%f-lato-regular {
+  font-family: 'Lato-Regular';
+}
+
+%f-size__large {
+  font-size: $f-size-large;
+}
+
+%f-size__medium {
+  font-size: $f-size-medium;
+}
+
+%f-size__small {
+  font-size: $f-size-small;
+}
+
+/* --------------- COLOR --------------- */
+
+/*========== text transform ==========*/
+%t-upper {
+  text-transform: uppercase;
+}
+
+%t-capi {
+  text-transform: capitalize;
+}
+
+%t-lower {
+  text-transform: lowercase;
+}
+
+%t-normal {
+  text-transform: none;
+}
+
+/*========== text align ==========*/
+%t-left {
+  text-align: left;
+}
+
+%t-right {
+  text-align: right;
+}
+
+%t-center {
+  text-align: center;
+}
+
+/*========== display ==========*/
+%inline {
+  display: inline;
+}
+%block {
+  display: block;
+}
+%inline-block {
+  display: inline-block;
+}
+
+/*========== position ==========*/
+%relative {
+  position: relative;
+}
+%absolute {
+  position: absolute;
+}
+
+%position-vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+%position-horizontal-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+%position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+%position-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $cl-bg-slide;
+  background-size: cover;
+}
+
+/*========== size ==========*/
+%size-icon {
+  width: 80px;
+  height: 92px;
+}
+
+// Bootstrap screen variable
+//
+// $screen-xs:                  480px !default;
+// $screen-xs-min:              $screen-xs !default;
+// $screen-phone:               $screen-xs-min !default;
+// $screen-sm:                  768px !default;
+// $screen-sm-min:              $screen-sm !default;
+// $screen-tablet:              $screen-sm-min !default;
+// $screen-md:                  992px !default;
+// $screen-md-min:              $screen-md !default;
+// $screen-desktop:             $screen-md-min !default;
+// $screen-lg:                  1200px !default;
+// $screen-lg-min:              $screen-lg !default;
+// $screen-lg-desktop:          $screen-lg-min !default;
+// $screen-xs-max:              ($screen-sm-min - 1) !default;
+// $screen-sm-max:              ($screen-md-min - 1) !default;
+// $screen-md-max:              ($screen-lg-min - 1) !default;
+
+/*========== float ==========*/
+%float-left {
+  float: left;
+}
+%float-right {
+  float: right;
+}
+
+/*========== progress ==========*/
+
+$percent: 50;
+$width-bar: auto;
+@while $percent < 100 {
+  %c-chart__bar-#{$percent} {
+    position: relative;
+    width: $width-bar;
+    height: 12px;
+    background: $color-bar-skill;
+    &:before {
+      content: "";
+      position: absolute;
+      width: $percent*1%;
+      height: 100%;
+      background: $color-bar-skill-percent;
+      top: 0;
+    }
+  }
+  $percent: $percent + 5;
+}

@@ -1,0 +1,16 @@
+// tablet
+@media only screen and (min-width : $screen-sm) {
+  .c-purchase-now {
+    &__wrapper {
+      text-align: left;
+    }
+    &__text {
+      width: 100%;
+      text-align: left;
+    }
+    &__button {
+      width: 100%;
+      text-align: left;
+    }
+  }
+}

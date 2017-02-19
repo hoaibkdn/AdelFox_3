@@ -1,0 +1,28 @@
+.c-top-footer {
+  background-color: $cl-bg-footer;
+  overflow: hidden;
+  &__list {
+    overflow: hidden;
+    margin-bottom: 0;
+    &--social {
+      color: $cl-icon-top-footer;
+    }
+  }
+
+  .icons-tablet {
+    width: 11%;
+  }
+
+  .list-social-mobile-1 {
+    padding-top: px_to_rem(30px);
+  }
+
+  .list-social-mobile-2 {
+    padding-bottom: px_to_rem(30px);
+  }
+
+
+  // .col-xs-6 {
+  //     display: block;
+  //   }
+}

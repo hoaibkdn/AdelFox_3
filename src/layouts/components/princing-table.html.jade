@@ -1,0 +1,17 @@
+section.c-princing-table
+  .container
+    .row
+      - var tables = [{"title":"basic", "price":"$99/"}, {"title":"standard", "price":"$199/"}, {"title":"ultimte", "price":"$299/"}]
+        each item in tables
+          .c-princing-table__item
+            .c-princing-table__title=item.title
+            .c-princing-table__price
+              p.number=item.price
+                span.month month
+            .c-princing-table__content
+              .c-princing-table__jobs
+                - var jobs= ["web design", "web development", "photography", "email marketing", "javascript", "PSD to HTML/CSS"]
+                  each item in jobs
+                    p=item
+              .c-princing-table__btn
+                a(href="#") purchase now

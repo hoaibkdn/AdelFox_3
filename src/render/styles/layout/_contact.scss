@@ -1,0 +1,43 @@
+.c-contact {
+  display: none;
+}
+
+@media screen and (min-width: $screen-sm) and (max-width: $max-size-medium-screen) {
+  .c-contact {
+    display: block;
+    background: $cl-bg-contact;
+    padding: $padding-lg 0;
+    &__title { 
+      width: px_to_rem(450px);
+      margin: auto;
+    }
+    &__img {
+      height: px_to_rem(400px);
+      background: $cl-bg-img-contact;
+    }
+  }
+  .o-form {
+    &__text,
+    &__email,
+    &__submit {
+      border-radius: 0;
+      text-transform: capitalize;
+      font-style: italic; 
+      margin-top: $margin-md;
+    }
+    &__submit {
+      border-radius: 3px;
+      font-style: normal;
+      background: $cl-bg-btn-contact;
+      border: none; 
+      border-bottom: 2px solid $cl-border-btn-contact;
+      color: $cl-white;
+      width: 100%;
+      padding: $padding-sm 0;
+      &:hover {
+        background: $cl-active;
+        color: $cl-white;
+      }
+    }
+  }
+}

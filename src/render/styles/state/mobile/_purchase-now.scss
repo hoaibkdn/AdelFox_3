@@ -1,0 +1,16 @@
+//mobile
+@media only screen and (min-width : $screen-xs) {
+  .c-purchase-now {
+    &__wrapper {
+      text-align: center;
+    }
+    &__text {
+      width: 100%;
+      text-align: center;
+    }
+    &__button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

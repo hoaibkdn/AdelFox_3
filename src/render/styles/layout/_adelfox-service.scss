@@ -1,0 +1,102 @@
+.c-adelfox-service {
+  background: $cl-bg-why-adelfox;
+  padding: $padding-lg 0;
+  border-top: 1px solid $cl-border-why-adelfox;
+  border-bottom: 1px solid $cl-border-why-adelfox;
+  &__why {
+    text-align: left;
+    &--content {
+      padding: $padding-md 0;
+    }
+  }
+  &__service {
+    text-align: left;
+  }
+}
+
+.o-reason {
+   margin-bottom: 7px;
+  &__btn {
+    display: block;
+    padding: 10px $padding-md;
+    font-size: px_to_rem(15px);
+    background: $cl-bg-btn-why-adelfox;
+    line-height: px_to_rem(20px);
+    position: relative;
+    text-transform: capitalize;
+    width: 100%;
+    border: 1px solid $cl-border-why-adelfox;
+    color: $cl-text-font-base;
+    margin-bottom: 2px;
+    text-align: left;
+    &:before {
+      content: "+";
+      position: absolute;
+      right: 9px;
+      top: 9px;
+      font-size: px_to_rem(24px);
+      font-weight: 800;
+    }
+    &:hover {
+      background: $cl-bg-btn-why-adelfox-active;
+    }
+    &:hover:before {
+      content: "-";
+    }
+  }
+  .is-active {
+    background: $cl-bg-btn-why-adelfox-active;
+    color: $cl-text-why-adelfox-active;
+    &:before {
+      content: "-";
+    }
+  }
+  &__content {
+    border: 1px solid $cl-border-why-adelfox;
+    background: $cl-bg-btn-why-adelfox;
+    padding: $padding-md;
+    text-align: left;
+  }
+
+}
+
+.o-tab {
+  margin: $margin-md 0;
+  &__group {
+    border-bottom-color: $cl-transparent;
+    li {
+      width: 33.33333%;
+    }
+    li > a {
+      margin: 0;
+      padding: 11px $padding-md;
+      border-radius: 0;
+      background: $cl-bg-tab-services;
+      text-transform: capitalize;
+      border-right: 1px solid $cl-white;
+    }
+    li:last-of-type {
+      & > a {
+        border-right: none;
+      }
+    }
+    li > a:hover {
+      background: $cl-bg-tab-services-hover;
+    }
+  }
+  &__content {
+    border: 1px solid #ddd;
+    border-top-color: $cl-transparent;
+    padding: $padding-md;
+    overflow: hidden;
+    background: $cl-white;
+    text-align: left;
+    &--img {
+      @include square-box(px_to_rem(100px));
+      float: left;
+      margin-right: $margin-md;
+      margin-bottom: $margin-md;
+      background: $cl-bg-img-services;
+    }
+  }
+}

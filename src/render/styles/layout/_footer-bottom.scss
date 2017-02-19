@@ -1,0 +1,21 @@
+.c-footer-bottom {
+  background-color: $cl-bg-footer-bottom;
+  padding-top: px_to_rem(20px);
+  padding-bottom: px_to_rem(5px);
+  &__copy {
+
+    &--content {
+      line-height: px_to_rem(30px);
+      font-size: $f-size-small;
+    }
+  }
+
+  &__nav {
+    &--item {
+      @extend %t-capi;
+      padding-top: 7px;
+      padding-right: px_to_rem(30px);
+      font-size: $f-size-default;
+    }
+  }
+}
